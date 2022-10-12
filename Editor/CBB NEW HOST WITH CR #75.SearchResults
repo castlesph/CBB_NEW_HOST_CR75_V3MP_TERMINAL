@@ -1,0 +1,4 @@
+---- inCTOS_CBB_LOGON Matches (4 in 3 files) ----
+POSCUPLogon.c (c:\work\cbb_bank\v5s_cbb_merged\trans):int inCTOS_CBB_LOGON(void)
+POSCUPLogon.h (c:\work\cbb_bank\v5s_cbb_merged\includes):int inCTOS_CBB_LOGON(void);
+POSFunctionsList.c (c:\work\cbb_bank\v5s_cbb_merged\functionslist):	{"inCTOS_CBB_LOGON", inCTOS_CBB_LOGON},

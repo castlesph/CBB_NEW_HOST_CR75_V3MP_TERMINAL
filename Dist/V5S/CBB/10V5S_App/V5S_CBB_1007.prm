@@ -1,0 +1,750 @@
+V5S_CBB
+1007
+0=TERMINAL\TCT\inThemesType=0;English(0)/Myanmar(7)
+0=TERMINAL\TCT\inFontFNTMode=0;New Font(0)/Default(1)
+0=TERMINAL\TCT\fECR=1;ECR Enable(1)/Disable(0)
+0=TERMINAL\TCT\byERMMode=0;ERM Mode V2(TXT)/V4(BMP)
+0=TERMINAL\TCT\fFirstInit=1;Terminal First Time initialization
+0=TERMINAL\TCT\inWaitTime=50;multi APP time setting
+0=TERMINAL\TCT\szSuperPW=1234;Terminal super password
+0=TERMINAL\TCT\szSystemPW=1234;Terminal system password
+0=TERMINAL\TCT\szEngineerPW=1234;Terminal engineer password
+0=TERMINAL\TCT\szFunKeyPW=88888888;Function Key password
+0=TERMINAL\TCT\szPMpassword=99999999;Program Manager password
+0=TERMINAL\TCT\fShareComEnable=1;Shared Communication Enable(1)/Disable(0)
+0=TERMINAL\TCT\fOfflinePinbypass=0;Offline PinByPass Enable(1)/Disable(0)
+0=TERMINAL\TCT\byCtlsMode=3;Contacless 0(Disabled),1(Internal Reader),2(QP3000S),3(V3 CTLS)
+0=TERMINAL\TCT\byRS232DebugPort=0;Debug Mode 1(COM1),2(COM2),8(USB)
+0=TERMINAL\TCT\fCVVEnable=0;CVV Enable Enable(1)/Disable(0)
+0=TERMINAL\TCT\fTipAllowFlag=0;TIP Adjustment Enable(1)/Disable(0)
+0=TERMINAL\TCT\fManualEntryInv=0;Manual Invoice NO Enable(1)/Disable(0)
+0=TERMINAL\TCT\fDebitFlag=1;Debit Card Support Enable(1)/Disable(0)
+0=TERMINAL\TCT\fDemo=0;DEMO MODE Enable(1)/Disable(0)
+1=TERMINAL\TCT\inMenuid=5;Database Menu IPP ONLY (3)/Cash Advance(4)/Direct Host with IPP(5)/Tap on Idle(6)/Topup&Repayment Stand Alone(7) 
+0=TERMINAL\TCT\byTerminalType=3;Terminal Type (1) for V5S Text Menu, (2) for V5S ICON MENU, (3) for V3 Text Menu, 4 for V3 ICON Menu
+0=TERMINAL\TCT\fSignatureFlag=0;Electronic Signature Enable(1)/Disable(0)
+0=TERMINAL\TCT\byPinPadType=0;Pinpad Type 0 None, 1 for PCI100, 2 for Reserved, 3 for V3P
+0=TERMINAL\TCT\byPinPadPort=0;Pinpad Port 0(None),1(COM1), 2(COM2), 8(USB), 9(USB Host) 
+0=TERMINAL\TCT\fHandsetPresent=0;BacklightSet Enable(1)/Disable(0)
+0=TERMINAL\TCT\inMainLine=1;terminal is handheld type, mean battery terminal
+0=TERMINAL\TCT\usTMSGap=7;TMS download Gap time
+0=TERMINAL\TCT\inTMSComMode=0;TMS 0 is dial, 1 is LAN, 2 is GPRS
+0=TERMINAL\TCT\usTMSRemotePort=80;TMS Remote port number
+0=TERMINAL\TCT\szTMSRemoteIP=192.168.0.18;TMS Remote IP address
+0=TERMINAL\TCT\usTMSRemotePort2=80;TMS SIM2 Remote port number
+0=TERMINAL\TCT\szTMSRemoteIP2=192.168.0.18;TMS SIM2 Remote IP address
+0=TERMINAL\TCT\szTMSRemotePhone=801;TMS The dial number
+0=TERMINAL\TCT\szTMSRemoteID=CTMS;TMS The ID string used for the CHAP authentication
+0=TERMINAL\TCT\szTMSRemotePW=CTMS;TMS The password string used for the CHAP authentication
+0=TERMINAL\TCT\byRS232ECRPort=8;ECR PORT 1(COM1),2(COM2),6(BT),8(USB),9(Ethernet)
+0=TERMINAL\TCT\szCTLSLimit=999999999999;terminal contactless transaction floor limit
+0=TERMINAL\TCT\inDupReceipt=3; Duplicate Receipt
+0=TERMINAL\TCT\fEnableAmountIdle=1; Amount Idle Enable(1)/Disable(0)
+0=TERMINAL\TCT\szAutoSettleIntervalHour=0000; Auto Settle Set Hour
+1=TERMINAL\TCT\szMerchantName=CB Bank; Merchant Name
+1=TERMINAL\TCT\szMerchantAddress=CB Bank Address; Merchant Address
+0=TERMINAL\TCT\szApplicationPW=4567;Terminal Application Password
+0=TERMINAL\TCT\fEnableIPPMenu=0;IPP Menu Enable(1)/Disable(0)
+0=TERMINAL\TCT\fEnableAlipayMenu=0;Alipay Menu Enable(1)/Disable(0)
+0=TERMINAL\TCT\inRcptVia=0;Receipt Via SMS(1)/EMAIL(2)/SMS EMAIL (3)
+0=TERMINAL\TCT\fEnablePreAuthMenu=0;PreAuth Menu Enable(1)/Disable(0)
+0=TERMINAL\TCT\fEnableUPISignONMenu=0;UPI (Finexus) Menu Enable(1)/Disable(0)
+0=TERMINAL\TCT\fVEPS=1;VEPS Enable(1)/Disable(0)
+0=TERMINAL\TCT\fQPS=1;QPS Enable(1)/Disable(0)
+0=TERMINAL\TCT\szQPSUSDLimit=5000;szQPSUSDLimit for USD currency
+0=TERMINAL\TCT\szVEPSUSDLimit=5000;szVEPSUSDLimit for USD currency
+0=TERMINAL\TCT\szQPSLimit=70000;szQPSLimit for MMK currency
+0=TERMINAL\TCT\szVEPSLimit=70000;szVEPSLimit for MMK currency
+0=TERMINAL\TCT\fEnableDiscountMenu=0;Discount Fixed/Percentage Amount Disable(0)/Enable(1)
+0=TERMINAL\TCP\szWifiSSID=x; Wifi SSID
+0=TERMINAL\TCP\szWifiPassword=11111111; Wifi Password
+0=TERMINAL\TCP\szWifiPairwise=CCMPTKI; Wifi PairWise
+0=TERMINAL\TCP\szWifiGroup=TKIP; Wifi Group
+0=TERMINAL\TCP\szAPN=MPTNET;GPRS SIM1 APN
+0=TERMINAL\TCP\szUserName=;GPRS SIM1 UserName
+0=TERMINAL\TCP\szPassword=;GPRS SIM1 Password
+0=TERMINAL\TCP\szAPN\TCPid\2=internet;GPRS SIM2 APN
+0=TERMINAL\TCP\szUserName\TCPid\2=;GPRS SIM2 UserName
+0=TERMINAL\TCP\szPassword\TCPid\2=;GPRS SIM2 Password
+0=TERMINAL\TCP\fDHCPEnable=1;TERMINAL IP TYPE STATIC(0)/DYNAMIC(1)
+0=TERMINAL\TCP\szTerminalIP=192.168.0.24;Terminal IP address
+0=TERMINAL\TCP\szGetWay=192.168.0.1;Terminal Gateway
+0=TERMINAL\TCP\szSubNetMask=255.255.255.0;Terminal Subnet Mask
+0=TERMINAL\TCP\szHostDNS1=8.8.8.8;Primary DNS
+0=TERMINAL\TCP\szHostDNS2=8.8.4.4;Secondary DNS
+0=TERMINAL\CST\szCurSymbol\CSTid\1=MMK;CurSymbol
+0=TERMINAL\CST\szCurCode\CSTid\1=104;CurCode
+0=TERMINAL\CST\szCurSymbol\CSTid\2=USD;CurSymbol
+0=TERMINAL\CST\szCurCode\CSTid\2=840;CurCode
+1=TERMINAL\MMT\fMMTEnable\MMTid\31=1;CUP Merchant 1 Enable
+1=TERMINAL\MMT\fMMTEnable\MMTid\34=1;MPU-CBB Merchant 1 Enable
+1=TERMINAL\MMT\fMMTEnable\MMTid\35=1;MPU Merchant 1 Enable
+1=TERMINAL\MMT\fMMTEnable\MMTid\41=1;Credit Merchant 1 Enable
+1=TERMINAL\MMT\szBatchNo\MMTid\31=100010;CUPBatchNo
+1=TERMINAL\MMT\szBatchNo\MMTid\41=000001;Credit BatchNo
+1=TERMINAL\MMT\szBatchNo\MMTid\34=100030;MPU-CBB BatchNo
+1=TERMINAL\MMT\szBatchNo\MMTid\35=000001;MPU BatchNo
+1=TERMINAL\MMT\szBatchNo\MMTid\36=300010;JCB BatchNo
+1=TERMINAL\MMT\szBatchNo\MMTid\37=200020;CUP BatchNo
+1=TERMINAL\MMT\fEnablePSWD\MMTid\34=1;MPU-CBB Merchant 1 Pwd Enable
+1=TERMINAL\MMT\fEnablePSWD\MMTid\35=1;MPU Merchant 1 Pwd Enable
+1=TERMINAL\MMT\fEnablePSWD\MMTid\36=1;JCB Merchant 1 Pwd Enable
+1=TERMINAL\MMT\fEnablePSWD\MMTid\37=1;CUP Merchant 1 Pwd Enable
+1=TERMINAL\MMT\fEnablePSWD\MMTid\41=1;Credit Merchant 1 Pwd Enable
+1=TERMINAL\MMT\szPassWord\MMTid\34=1111;MPU-CBB Merchant 1 Pwd Enable
+1=TERMINAL\MMT\szPassWord\MMTid\35=1111;MPU Merchant 1 Pwd Enable
+1=TERMINAL\MMT\szPassWord\MMTid\36=1111;JCB Merchant 1 Pwd Enable
+1=TERMINAL\MMT\szPassWord\MMTid\37=1111;CUP Merchant 1 Pwd Enable
+1=TERMINAL\MMT\szPassWord\MMTid\38=1111;Topup/Repayment Merchant 1 Pwd Enable
+1=TERMINAL\MMT\szPassWord\MMTid\41=1111;Credit Merchant 1 Pwd Enable
+1=TERMINAL\MMT\szTID\MMTid\26=XXXXXXXX;IPP Merchant 1 TID
+1=TERMINAL\MMT\szTID\MMTid\31=XXXXXXXX;UPI (Finexus) Merchant 1 TID
+1=TERMINAL\MMT\szTID\MMTid\34=10340002;MPU-CBB Merchant 1 TID
+1=TERMINAL\MMT\szTID\MMTid\35=10340002;MPU Merchant 1 TID
+1=TERMINAL\MMT\szTID\MMTid\36=XXXXXXXX;JCB Merchant 1 TID
+1=TERMINAL\MMT\szTID\MMTid\37=XXXXXXXX;CUP Merchant 1 TID
+1=TERMINAL\MMT\szTID\MMTid\38=XXXXXXXX;Topup/Repayment Merchant 1 TID
+1=TERMINAL\MMT\szTID\MMTid\41=XXXXXXXX;Credit Merchant 1 TID
+1=TERMINAL\MMT\szTID\MMTid\42=01000001;CB Pay Merchant 1 TID
+1=TERMINAL\MMT\szMID\MMTid\26=YYYYYYYYYYYYYYY;IPP Merchant 1 MID
+1=TERMINAL\MMT\szMID\MMTid\31=YYYYYYYYYYYYYYY;UPI (Finexus) Merchant 1 MID
+1=TERMINAL\MMT\szMID\MMTid\34=104627000009409;MPU CBB Merchant 1 MID
+1=TERMINAL\MMT\szMID\MMTid\35=104627000009409;MPU Merchant 1 MID
+1=TERMINAL\MMT\szMID\MMTid\36=YYYYYYYYYYYYYYY;JCB Merchant 1 MID
+1=TERMINAL\MMT\szMID\MMTid\37=YYYYYYYYYYYYYYY;CUP Merchant 1 MID
+1=TERMINAL\MMT\szMID\MMTid\38=YYYYYYYYYYYYYYY;Topup/Repayment Merchant 1 MID
+1=TERMINAL\MMT\szMID\MMTid\41=YYYYYYYYYYYYYYY;Credit Merchant 1 MID
+1=TERMINAL\MMT\szMID\MMTid\42=M601100000000016;CB Pay Merchant 1 MID
+0=TERMINAL\MMT\szRctFoot1\MMTid\26=IPP M1 Footer 1;IPP Merchant 1 Footer 1
+0=TERMINAL\MMT\szRctFoot2\MMTid\26=IPP M1 Footer 2;IPP Merchant 1 Footer 2
+0=TERMINAL\MMT\szRctFoot3\MMTid\26=IPP M1 Footer 3;IPP Merchant 1 Footer 3
+0=TERMINAL\MMT\szRctFoot1\MMTid\31=UPI (Finexus) M1 Footer 1;UPI (Finexus) Merchant 1 Footer 1
+0=TERMINAL\MMT\szRctFoot2\MMTid\31=UPI (Finexus) M1 Footer 2;UPI (Finexus)Merchant 1 Footer 2
+0=TERMINAL\MMT\szRctFoot3\MMTid\31=UPI (Finexus) M1 Footer 3;UPI (Finexus) Merchant 1 Footer 3
+0=TERMINAL\MMT\szRctFoot1\MMTid\34=MPU CBB M1 Footer 1;MPU CBB Merchant 1 Footer 1
+0=TERMINAL\MMT\szRctFoot2\MMTid\34=MPU CBB M1 Footer 2;MPU CBB Merchant 1 Footer 2
+0=TERMINAL\MMT\szRctFoot3\MMTid\34=MPU CBB M1 Footer 3;MPU CBB Merchant 1 Footer 3
+0=TERMINAL\MMT\szRctFoot1\MMTid\35=MPU M1 Footer 1;MPU Merchant 1 Footer 1
+0=TERMINAL\MMT\szRctFoot2\MMTid\35=MPU M1 Footer 2;MPU Merchant 1 Footer 2
+0=TERMINAL\MMT\szRctFoot3\MMTid\35=MPU M1 Footer 3;MPU Merchant 1 Footer 3
+0=TERMINAL\MMT\szRctFoot1\MMTid\36=JCB M1 Footer 1;JCB Merchant 1 Footer 1
+0=TERMINAL\MMT\szRctFoot2\MMTid\36=JCB M1 Footer 2;JCB Merchant 1 Footer 2
+0=TERMINAL\MMT\szRctFoot3\MMTid\36=JCB M1 Footer 3;JCB Merchant 1 Footer 3
+0=TERMINAL\MMT\szRctFoot1\MMTid\37=CUP M1 Footer 1;CUP Merchant 1 Footer 1
+0=TERMINAL\MMT\szRctFoot2\MMTid\37=CUP M1 Footer 2;CUP Merchant 1 Footer 2
+0=TERMINAL\MMT\szRctFoot3\MMTid\37=CUP M1 Footer 3;CUP Merchant 1 Footer 3
+0=TERMINAL\MMT\szRctFoot1\MMTid\38=Topup/Repayment Footer 1;Credit Merchant 1 Footer 1
+0=TERMINAL\MMT\szRctFoot2\MMTid\38=Topup/Repayment Footer 2;Credit Merchant 1 Footer 2
+0=TERMINAL\MMT\szRctFoot3\MMTid\38=Topup/Repayment Footer 3;Credit Merchant 1 Footer 3
+0=TERMINAL\MMT\szRctFoot1\MMTid\41=Credit Footer 1;Credit Merchant 1 Footer 1
+0=TERMINAL\MMT\szRctFoot2\MMTid\41=Credit Footer 2;Credit Merchant 1 Footer 2
+0=TERMINAL\MMT\szRctFoot3\MMTid\41=Credit Footer 3;Credit Merchant 1 Footer 3
+0=TERMINAL\MMT\szRctFoot1\MMTid\42=CB Pay Footer 1;CB Pay Merchant 1 Footer 1
+0=TERMINAL\MMT\szRctFoot2\MMTid\42=CB Pay Footer 2;CB Pay Merchant 1 Footer 2
+0=TERMINAL\MMT\szRctFoot3\MMTid\42=CB Pay Footer 3;CB Pay Merchant 1 Footer 3
+0=TERMINAL\CDT\HDTid\CDTid\6=21;Visa Card Host ID #CDT06
+0=TERMINAL\CDT\fCDTEnable\CDTid\6=1;Visa Card Enable(1)/Disable(0) #CDT06
+0=TERMINAL\CDT\szPANLo\CDTid\6=400000000000;VISA PAN Lo #CDT06
+0=TERMINAL\CDT\szPANHi\CDTid\6=499999999999;VISA PAN Hi #CDT06
+0=TERMINAL\CDT\inType\CDTid\6=0;Visa Card Type #CDT06
+0=TERMINAL\CDT\fManEntry\CDTid\6=0;Visa Card Manual Entry Enable(1)/Disable(0) #CDT06
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\06=0;Transaction floor limit amount #CDT06
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\6=1;Card Swipe Enable(1)/ Disable(0) #CDT06
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\6=1;Card Swipe Enable(1)/ Disable(0) #CDT06
+0=TERMINAL\CDT\fCDTEnable\CDTid\18=0;Card Enable(1)/Disable(0) #CDT18
+0=TERMINAL\CDT\HDTid\CDTid\19=7;UPI Card Host ID Finexus(7)/MPU(19) #CDT19
+0=TERMINAL\CDT\fCDTEnable\CDTid\19=1;UPI Enable(1)/Disable(0) #CDT19
+0=TERMINAL\CDT\szPANLo\CDTid\19=624419021000;UPI PAN Lo #CDT19
+0=TERMINAL\CDT\szPANHi\CDTid\19=624419021999;UPI PAN Hi #CDT19
+0=TERMINAL\CDT\inType\CDTid\19=0;UPI Card Type Finexus(0)/MPU(1) #CDT19
+0=TERMINAL\CDT\fManEntry\CDTid\19=0;UPI Card Manual Entry Enable(1)/Disable(0) #CDT19
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\19=0;Transaction floor limit amount #CDT19
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\19=0;Card Swipe Enable(1)/ Disable(0) #CDT19
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\19=0;Card Swipe Enable(1)/ Disable(0) #CDT19
+0=TERMINAL\CDT\HDTid\CDTid\20=17;MPU-UPI-CREDIT Card Host ID #CDT20
+0=TERMINAL\CDT\fCDTEnable\CDTid\20=1;MPU-UPI-CREDIT Enable(1)/Disable(0) #CDT20
+0=TERMINAL\CDT\szPANLo\CDTid\20=624431010000;MPU-UPI-CREDIT PAN Lo #CDT20
+0=TERMINAL\CDT\szPANHi\CDTid\20=624431019999;MPU-UPI-CREDIT PAN Hi #CDT20
+0=TERMINAL\CDT\inType\CDTid\20=1;MPU-UPI-CREDIT Card Type #CDT20
+0=TERMINAL\CDT\fManEntry\CDTid\20=0;MPU-UPI-CREDIT Card Manual Entry Enable(1)/Disable(0) #CDT20
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\20=0;Transaction floor limit amount #CDT20
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\20=0;Card Swipe Enable(1)/ Disable(0) #CDT20
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\20=0;Card Swipe Enable(1)/ Disable(0) #CDT20
+0=TERMINAL\CDT\HDTid\CDTid\21=19;MPU-UPI-CREDIT Card Host ID #CDT21
+0=TERMINAL\CDT\fCDTEnable\CDTid\21=1;MPU-UPI-CREDIT Enable(1)/Disable(0) #CDT21
+0=TERMINAL\CDT\szPANLo\CDTid\21=624431000000;MPU-UPI-CREDIT PAN Lo #CDT21
+0=TERMINAL\CDT\szPANHi\CDTid\21=624431999999;MPU-UPI-CREDIT PAN Hi #CDT21
+0=TERMINAL\CDT\inType\CDTid\21=1;MPU-UPI-CREDIT Card Type #CDT21
+0=TERMINAL\CDT\fManEntry\CDTid\21=0;MPU-UPI-CREDIT Card Manual Entry Enable(1)/Disable(0) #CDT21
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\21=0;Transaction floor limit amount #CDT21
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\21=0;Card Swipe Enable(1)/ Disable(0) #CDT21
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\21=0;Card Swipe Enable(1)/ Disable(0) #CDT21
+0=TERMINAL\CDT\HDTid\CDTid\22=19;MPU-UPI-CREDIT Card Host ID #CDT22 	
+0=TERMINAL\CDT\fCDTEnable\CDTid\22=1;MPU-UPI-CREDIT Enable(1)/Disable(0) #CDT22
+0=TERMINAL\CDT\szPANLo\CDTid\22=624430020000;MPU-UPI-CREDIT PAN Lo #CDT22
+0=TERMINAL\CDT\szPANHi\CDTid\22=624430029999;MPU-UPI-CREDIT PAN Hi #CDT22
+0=TERMINAL\CDT\inType\CDTid\22=1;MPU-UPI-CREDIT Card Type #CDT22
+0=TERMINAL\CDT\fManEntry\CDTid\22=0;MPU-UPI-CREDIT Card Manual Entry Enable(1)/Disable(0) #CDT22
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\22=0;Transaction floor limit amount #CDT22
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\22=0;Card Swipe Enable(1)/ Disable(0) #CDT22
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\22=0;Card Swipe Enable(1)/ Disable(0) #CDT22
+0=TERMINAL\CDT\HDTid\CDTid\23=19;MPU-UPI-CREDIT Card Host ID #CDT23
+0=TERMINAL\CDT\fCDTEnable\CDTid\23=1;MPU-UPI-CREDIT Enable(1)/Disable(0) #CDT23
+0=TERMINAL\CDT\szPANLo\CDTid\23=624430010000;MPU-UPI-CREDIT PAN Lo #CDT23
+0=TERMINAL\CDT\szPANHi\CDTid\23=624430019999;MPU-UPI-CREDIT PAN Hi #CDT23
+0=TERMINAL\CDT\inType\CDTid\23=1;MPU-UPI-CREDIT Card Type #CDT23
+0=TERMINAL\CDT\fManEntry\CDTid\23=0;MPU-UPI-CREDIT Card Manual Entry Enable(1)/Disable(0) #CDT23
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\23=0;Transaction floor limit amount #CDT23
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\23=0;Card Swipe Enable(1)/ Disable(0) #CDT23
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\23=0;Card Swipe Enable(1)/ Disable(0) #CDT23
+0=TERMINAL\CDT\HDTid\CDTid\24=19;MPU-UPI-CREDIT Card Host ID #CDT24
+0=TERMINAL\CDT\fCDTEnable\CDTid\24=1;MPU-UPI-CREDIT Enable(1)/Disable(0) #CDT24
+0=TERMINAL\CDT\szPANLo\CDTid\24=624430000000;MPU-UPI-CREDIT PAN Lo #CDT24
+0=TERMINAL\CDT\szPANHi\CDTid\24=624439999999;MPU-UPI-CREDIT PAN Hi #CDT24
+0=TERMINAL\CDT\inType\CDTid\24=1;MPU-UPI-CREDIT Card Type #CDT24
+0=TERMINAL\CDT\fManEntry\CDTid\24=0;MPU-UPI-CREDIT Card Manual Entry Enable(1)/Disable(0) #CDT24
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\24=0;Transaction floor limit amount #CDT24
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\24=0;Card Swipe Enable(1)/ Disable(0) #CDT24
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\24=0;Card Swipe Enable(1)/ Disable(0) #CDT24
+0=TERMINAL\CDT\HDTid\CDTid\25=19;MPU-UPI-CREDIT Card Host ID #CDT25
+0=TERMINAL\CDT\fCDTEnable\CDTid\25=1;MPU-UPI-CREDIT Enable(1)/Disable(0) #CDT25
+0=TERMINAL\CDT\szPANLo\CDTid\25=624445010000;MPU-UPI-CREDIT PAN Lo #CDT25
+0=TERMINAL\CDT\szPANHi\CDTid\25=624445019999;MPU-UPI-CREDIT PAN Hi #CDT25
+0=TERMINAL\CDT\inType\CDTid\25=1;MPU-UPI-CREDIT Card Type #CDT25
+0=TERMINAL\CDT\fManEntry\CDTid\25=0;MPU-UPI-CREDIT Card Manual Entry Enable(1)/Disable(0) #CDT25
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\25=0;Transaction floor limit amount #CDT25
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\25=0;Card Swipe Enable(1)/ Disable(0) #CDT25
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\25=0;Card Swipe Enable(1)/ Disable(0) #CDT25
+0=TERMINAL\CDT\HDTid\CDTid\26=19;MPU-UPI-CREDIT Card Host ID #CDT26
+0=TERMINAL\CDT\fCDTEnable\CDTid\26=1;MPU-UPI-CREDIT Enable(1)/Disable(0) #CDT26
+0=TERMINAL\CDT\szPANLo\CDTid\26=624445000000;MPU-UPI-CREDIT PAN Lo #CDT26
+0=TERMINAL\CDT\szPANHi\CDTid\26=624445999999;MPU-UPI-CREDIT PAN Hi #CDT26
+0=TERMINAL\CDT\inType\CDTid\26=1;MPU-UPI-CREDIT Card Type #CDT26
+0=TERMINAL\CDT\fManEntry\CDTid\26=0;MPU-UPI-CREDIT Card Manual Entry Enable(1)/Disable(0) #CDT26
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\26=0;Transaction floor limit amount #CDT26
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\26=0;Card Swipe Enable(1)/ Disable(0) #CDT26
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\26=0;Card Swipe Enable(1)/ Disable(0) #CDT26
+0=TERMINAL\CDT\HDTid\CDTid\27=19;MPU-UPI-CREDIT Card Host ID #CDT27
+0=TERMINAL\CDT\fCDTEnable\CDTid\27=1;MPU-UPI-CREDIT Enable(1)/Disable(0) #CDT27
+0=TERMINAL\CDT\szPANLo\CDTid\27=626220000000;MPU-UPI-CREDIT PAN Lo #CDT27
+0=TERMINAL\CDT\szPANHi\CDTid\27=626229999999;MPU-UPI-CREDIT PAN Hi #CDT27
+0=TERMINAL\CDT\inType\CDTid\27=1;MPU-UPI-CREDIT Card Type #CDT27
+0=TERMINAL\CDT\fManEntry\CDTid\27=0;MPU-UPI-CREDIT Card Manual Entry Enable(1)/Disable(0) #CDT27
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\27=0;Transaction floor limit amount #CDT27
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\27=0;Card Swipe Enable(1)/ Disable(0) #CDT27
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\27=0;Card Swipe Enable(1)/ Disable(0) #CDT27
+0=TERMINAL\CDT\HDTid\CDTid\28=21;Mastercard Card Host ID #CDT28
+0=TERMINAL\CDT\fCDTEnable\CDTid\28=1;Mastercard Enable(1)/Disable(0) #CDT28
+0=TERMINAL\CDT\szPANLo\CDTid\28=500000000000;MASTERCARD PAN Lo #CDT28
+0=TERMINAL\CDT\szPANHi\CDTid\28=599999999999;MASTERCARD PAN Hi #CDT28
+0=TERMINAL\CDT\inType\CDTid\28=0;Mastercard Card Type #CDT28
+0=TERMINAL\CDT\fManEntry\CDTid\28=0;Mastercard Card Manual Entry Enable(1)/Disable(0) #CDT28
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\28=0;Transaction floor limit amount #CDT28
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\28=1;Card Swipe Enable(1)/ Disable(0) #CDT28
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\28=1;Card Swipe Enable(1)/ Disable(0) #CDT28
+0=TERMINAL\CDT\HDTid\CDTid\29=19;MPU-UPI-CREDIT Card Host ID #CDT29
+0=TERMINAL\CDT\fCDTEnable\CDTid\29=1;MPU-UPI-CREDIT Enable(1)/Disable(0) #CDT29
+0=TERMINAL\CDT\szPANLo\CDTid\29=623476000000;MPU-UPI-CREDIT PAN Lo #CDT29
+0=TERMINAL\CDT\szPANHi\CDTid\29=623476999999;MPU-UPI-CREDIT PAN Hi #CDT29
+0=TERMINAL\CDT\inType\CDTid\29=1;MPU-UPI-CREDIT Card Type #CDT29
+0=TERMINAL\CDT\fManEntry\CDTid\29=0;MPU-UPI-CREDIT Card Manual Entry Enable(1)/Disable(0) #CDT29
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\29=0;Transaction floor limit amount #CDT29
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\29=0;Card Swipe Enable(1)/ Disable(0) #CDT29
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\29=0;Card Swipe Enable(1)/ Disable(0) #CDT29
+0=TERMINAL\CDT\HDTid\CDTid\30=17;MPU-UPI Card Host ID #CDT30
+0=TERMINAL\CDT\fCDTEnable\CDTid\30=1;MPU-UPI Enable(1)/Disable(0) #CDT30
+0=TERMINAL\CDT\szPANLo\CDTid\30=629214000000;MPU-UPI PAN Lo #CDT30
+0=TERMINAL\CDT\szPANHi\CDTid\30=629214999999;MPU-UPI PAN Hi #CDT30
+0=TERMINAL\CDT\inType\CDTid\30=1;MPU-UPI Card Type #CDT30
+0=TERMINAL\CDT\fManEntry\CDTid\30=0;MPU-UPI Card Manual Entry Enable(1)/Disable(0) #CDT30
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\30=0;Transaction floor limit amount #CDT30
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\30=0;Card Swipe Enable(1)/ Disable(0) #CDT30
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\30=0;Card Swipe Enable(1)/ Disable(0) #CDT30
+0=TERMINAL\CDT\HDTid\CDTid\34=21;Mastercard 2 Card Host ID #CDT34
+0=TERMINAL\CDT\fCDTEnable\CDTid\34=1;Mastercard 2 Enable(1)/Disable(0) #CDT34
+0=TERMINAL\CDT\szPANLo\CDTid\34=222100000000;MASTERCARD 2 PAN Lo #CDT34
+0=TERMINAL\CDT\szPANHi\CDTid\34=272099999999;MASTERCARD 2 PAN Hi #CDT34
+0=TERMINAL\CDT\inType\CDTid\34=0;Mastercard 2 Card Type #CDT34
+0=TERMINAL\CDT\fManEntry\CDTid\34=0;MasterCard 2 Card Manual Entry Enable(1)/Disable(0) #CDT34
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\34=0;Transaction floor limit amount #CDT34
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\34=0;Card Swipe Enable(1)/ Disable(0) #CDT34
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\34=0;Card Swipe Enable(1)/ Disable(0) #CDT34
+0=TERMINAL\CDT\HDTid\CDTid\43=17;MPU-CREDIT 1 Card Host ID #CDT43
+0=TERMINAL\CDT\fCDTEnable\CDTid\43=0;MPU-CREDIT 1 Enable(1)/Disable(0) #CDT43
+0=TERMINAL\CDT\szPANLo\CDTid\43=950508000000;MPU-CREDIT 1 PAN Lo #CDT43
+0=TERMINAL\CDT\szPANHi\CDTid\43=950508099999;MPU-CREDIT 1 PAN Hi #CDT43
+0=TERMINAL\CDT\inType\CDTid\43=1;MPU-CREDIT 1 Card Type #CDT43
+0=TERMINAL\CDT\fManEntry\CDTid\43=0;MPU-CREDIT 1 Card Manual Entry Enable(1)/Disable(0) #CDT43
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\43=0;Transaction floor limit amount #CDT43
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\43=0;Card Swipe Enable(1)/ Disable(0) #CDT43
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\43=0;Card Swipe Enable(1)/ Disable(0) #CDT43
+0=TERMINAL\CDT\HDTid\CDTid\44=17;MPU-CREDIT 1 Card Host ID #CDT44
+0=TERMINAL\CDT\fCDTEnable\CDTid\44=0;MPU-CREDIT 1 Enable(1)/Disable(0) #CDT44
+0=TERMINAL\CDT\szPANLo\CDTid\44=950508100000;MPU-CREDIT 1 PAN Lo #CDT44
+0=TERMINAL\CDT\szPANHi\CDTid\44=950508199999;MPU-CREDIT 1 PAN Hi #CDT44
+0=TERMINAL\CDT\inType\CDTid\44=1;MPU-CREDIT 1 Card Type #CDT44
+0=TERMINAL\CDT\fManEntry\CDTid\44=0;MPU-CREDIT 1 Card Manual Entry Enable(1)/Disable(0) #CDT44
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\44=0;Transaction floor limit amount #CDT44
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\44=0;Card Swipe Enable(1)/ Disable(0) #CDT44
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\44=0;Card Swipe Enable(1)/ Disable(0) #CDT44
+0=TERMINAL\CDT\HDTid\CDTid\45=17;MPU-CREDIT 1 Card Host ID #CDT45
+0=TERMINAL\CDT\fCDTEnable\CDTid\45=0;MPU-CREDIT 1 Enable(1)/Disable(0) #CDT45
+0=TERMINAL\CDT\szPANLo\CDTid\45=950508200000;MPU-CREDIT 1 PAN Lo #CDT45
+0=TERMINAL\CDT\szPANHi\CDTid\45=950508299999;MPU-CREDIT 1 PAN Hi #CDT45
+0=TERMINAL\CDT\inType\CDTid\45=1;MPU-CREDIT 1 Card Type #CDT45
+0=TERMINAL\CDT\fManEntry\CDTid\45=0;MPU-CREDIT 1 Card Manual Entry Enable(1)/Disable(0) #CDT45
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\45=0;Transaction floor limit amount #CDT45
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\45=0;Card Swipe Enable(1)/ Disable(0) #CDT45
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\45=0;Card Swipe Enable(1)/ Disable(0) #CDT45
+0=TERMINAL\CDT\HDTid\CDTid\46=7;UPI Card Host ID #CDT46
+0=TERMINAL\CDT\fCDTEnable\CDTid\46=1;UPI Enable(1)/Disable(0) #CDT46
+0=TERMINAL\CDT\szPANLo\CDTid\46=624419020000;UPI PAN Lo #CDT46
+0=TERMINAL\CDT\szPANHi\CDTid\46=624419029999;UPI PAN Hi #CDT46
+0=TERMINAL\CDT\inType\CDTid\46=0;UPI Card Type #CDT46
+0=TERMINAL\CDT\fManEntry\CDTid\46=0;UPI Card Manual Entry Enable(1)/Disable(0) #CDT46
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\46=0;Transaction floor limit amount #CDT46
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\46=0;Card Swipe Enable(1)/ Disable(0) #CDT46
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\46=0;Card Swipe Enable(1)/ Disable(0) #CDT46
+0=TERMINAL\CDT\fCDTEnable\CDTid\47=0;Card Enable(1)/Disable(0) #CDT47
+0=TERMINAL\CDT\HDTid\CDTid\48=17;MPU-CREDIT 1 Card Host ID #CDT48
+0=TERMINAL\CDT\fCDTEnable\CDTid\48=1;MPU-CREDIT 1 Enable(1)/Disable(0) #CDT48
+0=TERMINAL\CDT\szPANLo\CDTid\48=950500000000;MPU-CREDIT 1 PAN Lo #CDT48
+0=TERMINAL\CDT\szPANHi\CDTid\48=950599999999;MPU-CREDIT 1 PAN Hi #CDT48
+0=TERMINAL\CDT\inType\CDTid\48=1;MPU-CREDIT Card Type #CDT48
+0=TERMINAL\CDT\fManEntry\CDTid\48=0;MPU-CREDIT Card Manual Entry Enable(1)/Disable(0) #CDT48
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\48=0;Transaction floor limit amount #CDT48
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\48=0;Card Swipe Enable(1)/ Disable(0) #CDT48
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\48=0;Card Swipe Enable(1)/ Disable(0) #CDT48
+0=TERMINAL\CDT\HDTid\CDTid\50=17;MPU-DEBIT 1 Card Host ID #CDT50
+0=TERMINAL\CDT\fCDTEnable\CDTid\50=1;MPU-DEBIT 1 Enable(1)/Disable(0) #CDT50
+0=TERMINAL\CDT\szPANLo\CDTid\50=950100000000;MPU-DEBIT 1 PAN Lo #CDT50
+0=TERMINAL\CDT\szPANHi\CDTid\50=950999999999;MPU-DEBIT 1 PAN Hi #CDT50
+0=TERMINAL\CDT\inType\CDTid\50=1;MPU-DEBIT Card Type #CDT50
+0=TERMINAL\CDT\fManEntry\CDTid\50=0;MPU-DEBIT Card Manual Entry Enable(1)/Disable(0) #CDT50
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\50=0;Transaction floor limit amount #CDT50
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\50=0;Card Swipe Enable(1)/ Disable(0) #CDT50
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\50=0;Card Swipe Enable(1)/ Disable(0) #CDT50
+0=TERMINAL\CDT\HDTid\CDTid\51=17;MPU-JCB-DEBIT Card Host ID #CDT51
+0=TERMINAL\CDT\fCDTEnable\CDTid\51=1;MPU-JCB-DEBIT Enable(1)/Disable(0) #CDT51
+0=TERMINAL\CDT\szPANLo\CDTid\51=357100000000;MPU-JCB-DEBIT PAN Lo #CDT51
+0=TERMINAL\CDT\szPANHi\CDTid\51=357199999999;MPU-JCB-DEBIT PAN Hi #CDT51
+0=TERMINAL\CDT\inType\CDTid\51=1;MPU-JCB-DEBIT Card Type #CDT51
+0=TERMINAL\CDT\fManEntry\CDTid\51=0;MPU-JCB-DEBIT Card Manual Entry Enable(1)/Disable(0) #CDT51
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\51=0;Transaction floor limit amount #CDT51
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\51=0;Card Swipe Enable(1)/ Disable(0) #CDT51
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\51=0;Card Swipe Enable(1)/ Disable(0) #CDT51
+0=TERMINAL\CDT\HDTid\CDTid\52=17;MPU-JCB-CREDIT Card Host ID #CDT52
+0=TERMINAL\CDT\fCDTEnable\CDTid\52=1;MPU-JCB-CREDIT Enable(1)/Disable(0) #CDT52
+0=TERMINAL\CDT\szPANLo\CDTid\52=356500000000;MPU-JCB-CREDIT PAN Lo #CDT52
+0=TERMINAL\CDT\szPANHi\CDTid\52=356599999999;MPU-JCB-CREDIT PAN Hi #CDT52
+0=TERMINAL\CDT\inType\CDTid\52=1;MPU-JCB-CREDIT Card Type #CDT52
+0=TERMINAL\CDT\fManEntry\CDTid\52=0;MPU-JCB-DEBIT Card Manual Entry Enable(1)/Disable(0) #CDT52
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\52=0;Transaction floor limit amount #CDT52
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\52=0;Card Swipe Enable(1)/ Disable(0) #CDT52
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\52=0;Card Swipe Enable(1)/ Disable(0) #CDT52
+0=TERMINAL\CDT\HDTid\CDTid\53=7;UPI-PREPAID Card Host ID #CDT53
+0=TERMINAL\CDT\fCDTEnable\CDTid\53=1;UPI-PREPAID Enable(1)/Disable(0) #CDT53
+0=TERMINAL\CDT\szPANLo\CDTid\53=623493000000;UPI-PREPAID PAN Lo #CDT53
+0=TERMINAL\CDT\szPANHi\CDTid\53=623493999999;UPI-PREPAID PAN Hi #CDT53
+0=TERMINAL\CDT\inType\CDTid\53=0;UPI-PREPAID Card Type #CDT53
+0=TERMINAL\CDT\fManEntry\CDTid\53=0;UPI-PREPAID Card Manual Entry Enable(1)/Disable(0) #CDT53
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\53=0;Transaction floor limit amount #CDT53
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\53=0;Card Swipe Enable(1)/ Disable(0) #CDT53
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\53=0;Card Swipe Enable(1)/ Disable(0) #CDT53
+0=TERMINAL\CDT\fCDTEnable\CDTid\55=0;Card Enable(1)/Disable(0) #CDT55
+0=TERMINAL\CDT\HDTid\CDTid\56=18;JCB-CARD Card Host ID #CDT56
+0=TERMINAL\CDT\fCDTEnable\CDTid\56=1;JCB-CARD Enable(1)/Disable(0) #CDT56
+0=TERMINAL\CDT\szPANLo\CDTid\56=308800000000;JCB-CARD PAN Lo #CDT56
+0=TERMINAL\CDT\szPANHi\CDTid\56=309499999999;JCB-CARD PAN Hi #CDT56
+0=TERMINAL\CDT\inType\CDTid\56=1;JCB-CARD Card Type #CDT56
+0=TERMINAL\CDT\fManEntry\CDTid\56=1;JCB-CARD Card Manual Entry Enable(1)/Disable(0) #CDT56
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\56=0;Transaction floor limit amount #CDT56
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\56=1;Card Swipe Enable(1)/ Disable(0) #CDT56
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\56=1;Card Swipe Enable(1)/ Disable(0) #CDT56
+0=TERMINAL\CDT\HDTid\CDTid\57=18;JCB-CARD Card Host ID #CDT57
+0=TERMINAL\CDT\fCDTEnable\CDTid\57=1;JCB-CARD Enable(1)/Disable(0) #CDT57
+0=TERMINAL\CDT\szPANLo\CDTid\57=309600000000;JCB-CARD PAN Lo #CDT57
+0=TERMINAL\CDT\szPANHi\CDTid\57=310299999999;JCB-CARD PAN Hi #CDT57
+0=TERMINAL\CDT\inType\CDTid\57=1;JCB-CARD Card Type #CDT57
+0=TERMINAL\CDT\fManEntry\CDTid\57=0;JCB-CARD Card Manual Entry Enable(1)/Disable(0) #CDT57
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\57=0;Transaction floor limit amount #CDT57
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\57=1;Card Swipe Enable(1)/ Disable(0) #CDT57
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\57=1;Card Swipe Enable(1)/ Disable(0) #CDT57
+0=TERMINAL\CDT\HDTid\CDTid\58=18;JCB-CARD Card Host ID #CDT58
+0=TERMINAL\CDT\fCDTEnable\CDTid\58=1;JCB-CARDEnable(1)/Disable(0) #CDT58
+0=TERMINAL\CDT\szPANLo\CDTid\58=350000000000;JCB-CARD PAN Lo #CDT58
+0=TERMINAL\CDT\szPANHi\CDTid\58=359999999999;JCB-CARD PAN Hi #CDT58
+0=TERMINAL\CDT\inType\CDTid\58=1;JCB-CARD Card Type #CDT58
+0=TERMINAL\CDT\fManEntry\CDTid\58=0;JCB-CARD Card Manual Entry Enable(1)/Disable(0) #CDT58
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\58=0;Transaction floor limit amount #CDT58
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\58=1;Card Swipe Enable(1)/ Disable(0) #CDT58
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\58=1;Card Swipe Enable(1)/ Disable(0) #CDT58
+0=TERMINAL\CDT\HDTid\CDTid\59=19;MPU-UPI Card Host ID #CDT59
+0=TERMINAL\CDT\fCDTEnable\CDTid\59=1;MPU-UPI Enable(1)/Disable(0) #CDT59
+0=TERMINAL\CDT\szPANLo\CDTid\59=623466000000;MPU-UPI PAN Lo #CDT59
+0=TERMINAL\CDT\szPANHi\CDTid\59=623466999999;MPU-UPI PAN Hi #CDT59
+0=TERMINAL\CDT\inType\CDTid\59=1;MPU-UPI Card Type #CDT59
+0=TERMINAL\CDT\fManEntry\CDTid\59=0;MPU-UPI Card Manual Entry Enable(1)/Disable(0) #CDT59
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\59=0;Transaction floor limit amount #CDT59
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\59=0;Card Swipe Enable(1)/ Disable(0) #CDT59
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\59=0;Card Swipe Enable(1)/ Disable(0) #CDT59
+0=TERMINAL\CDT\HDTid\CDTid\60=19;MPU-UPI Card Host ID #CDT60
+0=TERMINAL\CDT\fCDTEnable\CDTid\60=1;MPU-UPI Enable(1)/Disable(0) #CDT60
+0=TERMINAL\CDT\szPANLo\CDTid\60=623433000000;MPU-UPI PAN Lo #CDT60
+0=TERMINAL\CDT\szPANHi\CDTid\60=623433999999;MPU-UPI PAN Hi #CDT60
+0=TERMINAL\CDT\inType\CDTid\60=1;MPU-UPI Card Type #CDT60
+0=TERMINAL\CDT\fManEntry\CDTid\60=0;MPU-UPI Card Manual Entry Enable(1)/Disable(0) #CDT60
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\60=0;Transaction floor limit amount #CDT60
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\60=0;Card Swipe Enable(1)/ Disable(0) #CDT60
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\60=0;Card Swipe Enable(1)/ Disable(0) #CDT60
+0=TERMINAL\CDT\fCDTEnable\CDTid\61=0;Card Enable(1)/Disable(0) #CDT61
+0=TERMINAL\CDT\HDTid\CDTid\62=7;MPU-UPI-GOLD CREDIT Card Host ID #CDT62
+0=TERMINAL\CDT\fCDTEnable\CDTid\62=1;MPU-UPI-GOLD CREDIT Enable(1)/Disable(0) #CDT62
+0=TERMINAL\CDT\szPANLo\CDTid\62=624419001000;MPU-UPI-GOLD CREDIT PAN Lo #CDT62
+0=TERMINAL\CDT\szPANHi\CDTid\62=624419001999;MPU-UPI-GOLD CREDIT PAN Hi #CDT62
+0=TERMINAL\CDT\inType\CDTid\62=0;MPU-UPI-GOLD CREDIT Card Type #CDT62
+0=TERMINAL\CDT\fManEntry\CDTid\62=0;MPU-UPI-GOLD CREDIT Card Manual Entry Enable(1)/Disable(0) #CDT62
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\62=0;Transaction floor limit amount #CDT62
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\62=0;Card Swipe Enable(1)/ Disable(0) #CDT62
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\62=0;Card Swipe Enable(1)/ Disable(0) #CDT62
+0=TERMINAL\CDT\HDTid\CDTid\63=7;MPU-UPI-PLATINUM CREDIT Card Host ID #CDT63
+0=TERMINAL\CDT\fCDTEnable\CDTid\63=1;MPU-UPI-PLATINUM CREDIT Enable(1)/Disable(0) #CDT63
+0=TERMINAL\CDT\szPANLo\CDTid\63=624419010000;MPU-UPI-PLATINUM CREDIT PAN Lo #CDT63
+0=TERMINAL\CDT\szPANHi\CDTid\63=624419019999;MPU-UPI-PLATINUM CREDIT PAN Hi #CDT63
+0=TERMINAL\CDT\inType\CDTid\63=0;MPU-UPI-PLATINUM CREDIT Card Type #CDT63
+0=TERMINAL\CDT\fManEntry\CDTid\63=0;MPU-UPI-PLATINUM CREDIT Card Manual Entry Enable(1)/Disable(0) #CDT63
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\63=0;Transaction floor limit amount #CDT63
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\63=0;Card Swipe Enable(1)/ Disable(0) #CDT63
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\63=0;Card Swipe Enable(1)/ Disable(0) #CDT63
+0=TERMINAL\CDT\HDTid\CDTid\64=7;MPU-UPI-CLASSIC CREDIT Card Host ID #CDT64
+0=TERMINAL\CDT\fCDTEnable\CDTid\64=1;MPU-UPI-CLASSIC CREDIT Enable(1)/Disable(0) #CDT64
+0=TERMINAL\CDT\szPANLo\CDTid\64=624419000000;MPU-UPI-CLASSIC CREDIT PAN Lo #CDT64
+0=TERMINAL\CDT\szPANHi\CDTid\64=624419999999;MPU-UPI-CLASSIC CREDIT PAN Hi #CDT64
+0=TERMINAL\CDT\inType\CDTid\64=0;MPU-UPI-CLASSIC CREDIT Card Type #CDT64
+0=TERMINAL\CDT\fManEntry\CDTid\64=0;MPU-UPI-CLASSIC CREDIT Card Manual Entry Enable(1)/Disable(0) #CDT64
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\64=0;Transaction floor limit amount #CDT64
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\64=0;Card Swipe Enable(1)/ Disable(0) #CDT64
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\64=0;Card Swipe Enable(1)/ Disable(0) #CDT64
+0=TERMINAL\CDT\HDTid\CDTid\65=7;UPI3 Host ID Finexus(7)/MPU(19) #CDT65
+0=TERMINAL\CDT\fCDTEnable\CDTid\65=1;UPI Enable(1)/Disable(0) #CDT65
+0=TERMINAL\CDT\szPANLo\CDTid\65=620000000000;UPI PAN Lo #CDT65
+0=TERMINAL\CDT\szPANHi\CDTid\65=629999999999;UPI PAN Hi #CDT65
+0=TERMINAL\CDT\inType\CDTid\65=0;UPI Card Type Finexus(0)/MPU(1) #CDT65
+0=TERMINAL\CDT\fManEntry\CDTid\65=0;UPI Card Card Manual Entry Enable(1)/Disable(0) #CDT65
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\65=0;Transaction floor limit amount #CDT65
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\65=0;Card Swipe Enable(1)/ Disable(0) #CDT65
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\65=0;Card Swipe Enable(1)/ Disable(0) #CDT65
+0=TERMINAL\CDT\HDTid\CDTid\66=7;UPI Host ID Finexus(7)/MPU(19) #CDT66
+0=TERMINAL\CDT\fCDTEnable\CDTid\66=1;UPI Enable(1)/Disable(0) #CDT66
+0=TERMINAL\CDT\szPANLo\CDTid\66=810000000000;UPI PAN Lo #CDT66
+0=TERMINAL\CDT\szPANHi\CDTid\66=817199999999;UPI PAN Hi #CDT66
+0=TERMINAL\CDT\inType\CDTid\66=0;UPI Card Type Finexus(0)/MPU(1) #CDT66
+0=TERMINAL\CDT\fManEntry\CDTid\66=0;UPI Card Manual Entry Enable(1)/Disable(0) #CDT66
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\66=0;Transaction floor limit amount #CDT66
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\66=0;Card Swipe Enable(1)/ Disable(0) #CDT66
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\66=0;Card Swipe Enable(1)/ Disable(0) #CDT66
+0=TERMINAL\CDT\HDTid\CDTid\91=7;UPI Card Host ID #CDT91
+0=TERMINAL\CDT\fCDTEnable\CDTid\91=1;UPI Enable(1)/Disable(0) #CDT91
+0=TERMINAL\CDT\szPANLo\CDTid\91=624419030000;UPI PAN Lo #CDT91
+0=TERMINAL\CDT\szPANHi\CDTid\91=624419039999;UPI PAN Hi #CDT91
+0=TERMINAL\CDT\inType\CDTid\91=0;UPI Card Type #CDT91
+0=TERMINAL\CDT\fManEntry\CDTid\91=0;UPI Card Manual Entry Enable(1)/Disable(0) #CDT91
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\91=0;Transaction floor limit amount #CDT91
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\91=0;Card Swipe Enable(1)/ Disable(0) #CDT91
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\91=0;Card Swipe Enable(1)/ Disable(0) #CDT91
+0=TERMINAL\CDT\HDTid\CDTid\93=7;UPI Card Host ID #CDT93
+0=TERMINAL\CDT\fCDTEnable\CDTid\93=1;UPI Enable(1)/Disable(0) #CDT93
+0=TERMINAL\CDT\szPANLo\CDTid\93=356574000000;UPI PAN Lo #CDT93
+0=TERMINAL\CDT\szPANHi\CDTid\93=356574999999;UPI PAN Hi #CDT93
+0=TERMINAL\CDT\inType\CDTid\93=0;UPI Card Type #CDT93
+0=TERMINAL\CDT\fManEntry\CDTid\93=0;UPI Card Manual Entry Enable(1)/Disable(0) #CDT93
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\93=0;Transaction floor limit amount #CDT93
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\93=0;Card Swipe Enable(1)/ Disable(0) #CDT93
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\93=0;Card Swipe Enable(1)/ Disable(0) #CDT93
+0=TERMINAL\CDT\HDTid\CDTid\98=17;MPU-JCB Card Host ID #CDT98
+0=TERMINAL\CDT\fCDTEnable\CDTid\98=1;MPU-JCB Enable(1)/Disable(0) #CDT98
+0=TERMINAL\CDT\szPANLo\CDTid\98=357109000000;MPU-JCB PAN Lo #CDT98
+0=TERMINAL\CDT\szPANHi\CDTid\98=357109999999;MPU-JCB PAN Hi #CDT98
+0=TERMINAL\CDT\inType\CDTid\98=0;MPU-JCB Card Type #CDT98
+0=TERMINAL\CDT\fManEntry\CDTid\98=0;MPU-JCB Card Manual Entry Enable(1)/Disable(0) #CDT98
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\98=0;Transaction floor limit amount #CDT98
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\98=0;Card Swipe Enable(1)/ Disable(0) #CDT98
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\98=0;Card Swipe Enable(1)/ Disable(0) #CDT98
+0=TERMINAL\CDT\HDTid\CDTid\99=17;MPU-JCB Card Host ID #CDT99
+0=TERMINAL\CDT\fCDTEnable\CDTid\99=1;MPU-JCB Enable(1)/Disable(0) #CDT99
+0=TERMINAL\CDT\szPANLo\CDTid\99=357108000000;MPU-JCB PAN Lo #CDT99
+0=TERMINAL\CDT\szPANHi\CDTid\99=357108999999;MPU-JCB PAN Hi #CDT99
+0=TERMINAL\CDT\inType\CDTid\99=0;MPU-JCB Card Type #CDT99
+0=TERMINAL\CDT\fManEntry\CDTid\99=0;MPU-JCB Card Manual Entry Enable(1)/Disable(0) #CDT99
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\99=0;Transaction floor limit amount #CDT99
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\99=0;PreAuth Enable(1)/ Disable(0) #CDT99
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\99=0;Card Swipe Enable(1)/ Disable(0) #CDT99
+0=TERMINAL\CDT\HDTid\CDTid\100=17;MPU-CREDIT Card Host ID #CDT100
+0=TERMINAL\CDT\fCDTEnable\CDTid\100=1;MPU-CREDIT Enable(1)/Disable(0) #CDT100
+0=TERMINAL\CDT\szPANLo\CDTid\100=950308000000;MPU-CREDIT PAN Lo #CDT100
+0=TERMINAL\CDT\szPANHi\CDTid\100=950308999999;MPU-CREDIT PAN Hi #CDT100
+0=TERMINAL\CDT\inType\CDTid\100=1;MPU-CREDIT Card Type #CDT100
+0=TERMINAL\CDT\fManEntry\CDTid\100=0;MPU-CREDIT Card Manual Entry Enable(1)/Disable(0) #CDT100
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\100=0;Transaction floor limit amount #CDT100
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\100=0;Card Swipe Enable(1)/ Disable(0) #CDT100
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\100=0;Card Swipe Enable(1)/ Disable(0) #CDT100
+0=TERMINAL\CDT\HDTid\CDTid\101=7;UPI Card Host ID #CDT101
+0=TERMINAL\CDT\fCDTEnable\CDTid\101=1;UPI Enable(1)/Disable(0) #CDT101
+0=TERMINAL\CDT\szPANLo\CDTid\101=624419040000;UPI PAN Lo #CDT101
+0=TERMINAL\CDT\szPANHi\CDTid\101=624419049999;UPI PAN Hi #CDT101
+0=TERMINAL\CDT\inType\CDTid\101=0;UPI Card Type #CDT101
+0=TERMINAL\CDT\fManEntry\CDTid\101=0;UPI Card Manual Entry Enable(1)/Disable(0) #CDT101
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\101=0;Transaction floor limit amount #CDT101
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\101=0;Card Swipe Enable(1)/ Disable(0) #CDT101
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\101=0;PreAuth Enable(1)/ Disable(0) #CDT101
+0=TERMINAL\CDT\HDTid\CDTid\102=17;MPU-UPI Card Host ID #CDT102
+0=TERMINAL\CDT\fCDTEnable\CDTid\102=1;MPU-UPI Enable(1)/Disable(0) #CDT102
+0=TERMINAL\CDT\szPANLo\CDTid\102=629111028000;MPU-UPI PAN Lo #CDT102
+0=TERMINAL\CDT\szPANHi\CDTid\102=629111028999;MPU-UPI PAN Hi #CDT102
+0=TERMINAL\CDT\inType\CDTid\102=0;MPU-UPI Card Type #CDT102
+0=TERMINAL\CDT\fManEntry\CDTid\102=0;MPU-UPI Card Manual Entry Enable(1)/Disable(0) #CDT102
+0=TERMINAL\CDT\InFloorLimitAmount\CDTid\102=0;Transaction floor limit amount #CDT102
+0=TERMINAL\CDT\fMagSwipeEnable\CDTid\102=0;Card Swipe Enable(1)/ Disable(0) #CDT102
+0=TERMINAL\CDT\fPreAuthAllowed\CDTid\102=0;PreAuth Enable(1)/ Disable(0) #CDT102
+0=TERMINAL\CPT\inCommunicationMode\CPTid\6=1;IPP Comm Mode 0 is dial, 1 is LAN, 2 is GPRS #CPT06
+0=TERMINAL\CPT\inSecCommunicationMode\CPTid\6=0;IPP Sec Comm Mode 0 is dial, 1 is LAN, 2 is GPRS,9 is None #CPT06
+0=TERMINAL\CPT\fSSLEnable\CPTid\6=0;IPP SSL Enable(1)/Disable(0) #CPT06
+0=TERMINAL\CPT\szPriTxnHostIP\CPTid\6=121.121.5.234;IPP Primary Trx Host IP #CPT06
+0=TERMINAL\CPT\szSecTxnHostIP\CPTid\6=121.121.5.234;IPP Secondary Trx Host IP #CPT06
+0=TERMINAL\CPT\inPriTxnHostPortNum\CPTid\6=8000;IPP Primary txn port number #CPT06
+0=TERMINAL\CPT\inSecTxnHostPortNum\CPTid\6=8000;IPP Secondary txn port number #CPT06
+0=TERMINAL\CPT\szPriTxnIP_2\CPTid\6=101.121.5.234;IPP SIM2 Primary Trx Host IP #CPT06
+0=TERMINAL\CPT\szSecTxnIP_2\CPTid\6=101.121.5.234;IPP SIM2 Secondary Trx Host IP #CPT06
+0=TERMINAL\CPT\inPriTxnPort_2\CPTid\6=1000;IPP SIM2 Primary txn port number #CPT06
+0=TERMINAL\CPT\inSecTxnPort_2\CPTid\6=1000;IPP SIM2 Secondary txn port number #CPT06
+0=TERMINAL\CPT\inCommunicationMode\CPTid\7=1;UPI (Finexus) Comm Mode 0 is dial, 1 is LAN, 2 is GPRS #CPT07
+0=TERMINAL\CPT\inSecCommunicationMode\CPTid\7=1;UPI (Finexus) Sec Comm Mode 0 is dial, 1 is LAN, 2 is GPRS,9 is None #CPT07
+0=TERMINAL\CPT\fSSLEnable\CPTid\7=0;UPI (Finexus) SSL Enable(1)/Disable(0) #CPT07
+0=TERMINAL\CPT\szPriTxnHostIP\CPTid\7=210.19.8.102;UPI (Finexus) Primary Trx Host IP #CPT07
+0=TERMINAL\CPT\szSecTxnHostIP\CPTid\7=121.121.5.236;UPI (Finexus) Secondary Trx Host IP #CPT07
+0=TERMINAL\CPT\inPriTxnHostPortNum\CPTid\7=8000;UPI (Finexus) Primary txn port number #CPT07
+0=TERMINAL\CPT\inSecTxnHostPortNum\CPTid\7=8000;UPI (Finexus) Secondary txn port number #CPT07
+0=TERMINAL\CPT\szPriTxnIP_2\CPTid\7=101.121.5.234;UPI (Finexus) SIM2 Primary Trx Host IP #CPT07
+0=TERMINAL\CPT\szSecTxnIP_2\CPTid\7=101.121.5.234;UPI (Finexus) SIM2 Secondary Trx Host IP #CPT07
+0=TERMINAL\CPT\inPriTxnPort_2\CPTid\7=1000;UPI (Finexus) SIM2 Primary txn port number #CPT07
+0=TERMINAL\CPT\inSecTxnPort_2\CPTid\7=1000;UPI (Finexus) SIM2 Secondary txn port number #CPT07
+0=TERMINAL\CPT\inCommunicationMode\CPTid\16=1;MPU-CBB Comm Mode 0 is dial, 1 is LAN, 2 is GPRS #CPT16
+0=TERMINAL\CPT\inSecCommunicationMode\CPTid\16=1;MPU-CBB Sec Comm Mode 0 is dial, 1 is LAN, 2 is GPRS,9 is None #CPT16
+0=TERMINAL\CPT\fSSLEnable\CPTid\16=0;MPU-CBB SSL Enable(1)/Disable(0) #CPT16
+0=TERMINAL\CPT\szPriTxnHostIP\CPTid\16=210.19.8.102;MPU-CBB Primary Trx Host IP #CPT16
+0=TERMINAL\CPT\szSecTxnHostIP\CPTid\16=121.121.5.236;MPU-CBB Secondary Trx Host IP #CPT16
+0=TERMINAL\CPT\inPriTxnHostPortNum\CPTid\16=8000;MPU-CBB Primary txn port number #CPT16
+0=TERMINAL\CPT\inSecTxnHostPortNum\CPTid\16=8000;MPU-CBB Secondary txn port number #CPT16
+0=TERMINAL\CPT\szPriTxnIP_2\CPTid\16=101.121.5.234;MPU-CBB SIM2 Primary Trx Host IP #CPT16
+0=TERMINAL\CPT\szSecTxnIP_2\CPTid\16=101.121.5.234;MPU-CBB SIM2 Secondary Trx Host IP #CPT16
+0=TERMINAL\CPT\inPriTxnPort_2\CPTid\16=1000;MPU-CBB SIM2 Primary txn port number #CPT16
+0=TERMINAL\CPT\inSecTxnPort_2\CPTid\16=1000;MPU-CBB SIM2 Secondary txn port number #CPT16
+0=TERMINAL\CPT\inCommunicationMode\CPTid\17=1;MPU Comm Mode 0 is dial, 1 is LAN, 2 is GPRS #CPT17
+0=TERMINAL\CPT\inSecCommunicationMode\CPTid\17=1;MPU Sec Comm Mode 0 is dial, 1 is LAN, 2 is GPRS,9 is None #CPT17
+0=TERMINAL\CPT\fSSLEnable\CPTid\17=0;MPU SSL Enable(1)/Disable(0) #CPT17
+0=TERMINAL\CPT\szPriTxnHostIP\CPTid\17=43.242.135.24;MPU Primary Trx Host IP #CPT17
+0=TERMINAL\CPT\szSecTxnHostIP\CPTid\17=43.242.135.24;MPU Secondary Trx Host IP #CPT17
+0=TERMINAL\CPT\inPriTxnHostPortNum\CPTid\17=8561;MPU Primary txn port number #CPT17
+0=TERMINAL\CPT\inSecTxnHostPortNum\CPTid\17=8561;MPU Secondary txn port number #CPT17
+0=TERMINAL\CPT\szPriTxnIP_2\CPTid\17=101.121.5.234;MPU SIM2 Primary Trx Host IP #CPT17
+0=TERMINAL\CPT\szSecTxnIP_2\CPTid\17=101.121.5.234;MPU SIM2 Secondary Trx Host IP #CPT17
+0=TERMINAL\CPT\inPriTxnPort_2\CPTid\17=1000;MPU SIM2 Primary txn port number #CPT17
+0=TERMINAL\CPT\inSecTxnPort_2\CPTid\17=1000;MPU SIM2 Secondary txn port number #CPT17
+0=TERMINAL\CPT\inCommunicationMode\CPTid\18=1;JCB Comm Mode 0 is dial, 1 is LAN, 2 is GPRS #CPT18
+0=TERMINAL\CPT\inSecCommunicationMode\CPTid\18=1;JCB Sec Comm Mode 0 is dial, 1 is LAN, 2 is GPRS,9 is None #CPT18
+0=TERMINAL\CPT\fSSLEnable\CPTid\18=0;JCB SSL Enable(1)/Disable(0) #CPT18
+0=TERMINAL\CPT\szPriTxnHostIP\CPTid\18=210.19.8.102;JCB Primary Trx Host IP #CPT18
+0=TERMINAL\CPT\szSecTxnHostIP\CPTid\18=121.121.5.236;JCB Secondary Trx Host IP #CPT18
+0=TERMINAL\CPT\inPriTxnHostPortNum\CPTid\18=8000;JCB Primary txn port number #CPT18
+0=TERMINAL\CPT\inSecTxnHostPortNum\CPTid\18=8000;JCB Secondary txn port number #CPT18
+0=TERMINAL\CPT\szPriTxnIP_2\CPTid\18=101.121.5.234;JCB SIM2 Primary Trx Host IP #CPT18
+0=TERMINAL\CPT\szSecTxnIP_2\CPTid\18=101.121.5.234;JCB SIM2 Secondary Trx Host IP #CPT18
+0=TERMINAL\CPT\inPriTxnPort_2\CPTid\18=1000;JCB SIM2 Primary txn port number #CPT18
+0=TERMINAL\CPT\inSecTxnPort_2\CPTid\18=1000;JCB SIM2 Secondary txn port number #CPT18
+0=TERMINAL\CPT\inCommunicationMode\CPTid\19=1;CUP Comm Mode 0 is dial, 1 is LAN, 2 is GPRS #CPT19
+0=TERMINAL\CPT\inSecCommunicationMode\CPTid\19=1;CUP Sec Comm Mode 0 is dial, 1 is LAN, 2 is GPRS,9 is None #CPT19
+0=TERMINAL\CPT\fSSLEnable\CPTid\19=0;CUP SSL Enable(1)/Disable(0) #CPT19
+0=TERMINAL\CPT\szPriTxnHostIP\CPTid\19=192.168.0.102;CUP Primary Trx Host IP #CPT19
+0=TERMINAL\CPT\szSecTxnHostIP\CPTid\19=192.168.0.102;CUP Secondary Trx Host IP #CPT19
+0=TERMINAL\CPT\inPriTxnHostPortNum\CPTid\19=5010;CUP Primary txn port number #CPT19
+0=TERMINAL\CPT\inSecTxnHostPortNum\CPTid\19=5010;CUP Secondary txn port number #CPT19
+0=TERMINAL\CPT\szPriTxnIP_2\CPTid\19=101.121.5.234;CUP SIM2 Primary Trx Host IP #CPT19
+0=TERMINAL\CPT\szSecTxnIP_2\CPTid\19=101.121.5.234;CUP SIM2 Secondary Trx Host IP #CPT19
+0=TERMINAL\CPT\inPriTxnPort_2\CPTid\19=1000;CUP SIM2 Primary txn port number #CPT19
+0=TERMINAL\CPT\inSecTxnPort_2\CPTid\19=1000;CUP SIM2 Secondary txn port number #CPT19
+0=TERMINAL\CPT\inCommunicationMode\CPTid\20=1;Topup/Repayment Comm Mode 0 is dial, 1 is LAN, 2 is GPRS #CPT20
+0=TERMINAL\CPT\inSecCommunicationMode\CPTid\20=1;Topup/Repayment Sec Comm Mode 0 is dial, 1 is LAN, 2 is GPRS,9 is None #CPT20
+0=TERMINAL\CPT\fSSLEnable\CPTid\20=0;Topup/Repayment SSL Enable(1)/Disable(0) #CPT20
+0=TERMINAL\CPT\szPriTxnHostIP\CPTid\20=122.248.120.193;Topup/Repayment Primary Trx Host IP #CPT20
+0=TERMINAL\CPT\szSecTxnHostIP\CPTid\20=122.248.120.193;Topup/Repayment Secondary Trx Host IP #CPT20
+0=TERMINAL\CPT\inPriTxnHostPortNum\CPTid\20=4008;Topup/Repayment Primary txn port number #CPT20
+0=TERMINAL\CPT\inSecTxnHostPortNum\CPTid\20=4008;Topup/Repayment Secondary txn port number #CPT20
+0=TERMINAL\CPT\szPriTxnIP_2\CPTid\20=101.121.5.234;Topup/Repayment SIM2 Primary Trx Host IP #CPT20
+0=TERMINAL\CPT\szSecTxnIP_2\CPTid\20=101.121.5.234;Topup/Repayment SIM2 Secondary Trx Host IP #CPT20
+0=TERMINAL\CPT\inPriTxnPort_2\CPTid\20=1000;Topup/Repayment SIM2 Primary txn port number #CPT20
+0=TERMINAL\CPT\inSecTxnPort_2\CPTid\20=1000;Topup/Repayment SIM2 Secondary txn port number #CPT20
+0=TERMINAL\CPT\inCommunicationMode\CPTid\21=1;CREDIT Comm Mode 0 is dial, 1 is LAN, 2 is GPRS #CPT21
+0=TERMINAL\CPT\inSecCommunicationMode\CPTid\21=1;0 is dial, 1 is LAN, 2 is GPRS,9 is None #CPT21
+0=TERMINAL\CPT\fSSLEnable\CPTid\21=0;CREDIT SSL Enable(1)/Disable(0) #CPT21
+0=TERMINAL\CPT\szPriTxnHostIP\CPTid\21=210.19.8.102;CREDIT Primary Trx Host IP #CPT21
+0=TERMINAL\CPT\szSecTxnHostIP\CPTid\21=121.121.5.236;CREDIT Secondary Trx Host IP #CPT21
+0=TERMINAL\CPT\inPriTxnHostPortNum\CPTid\21=8000;CREDIT Primary txn port number #CPT21
+0=TERMINAL\CPT\inSecTxnHostPortNum\CPTid\21=8000;CREDIT Secondary txn port number #CPT21
+0=TERMINAL\CPT\szPriTxnIP_2\CPTid\21=101.121.5.234;CREDIT SIM2 Primary Trx Host IP #CPT21
+0=TERMINAL\CPT\szSecTxnIP_2\CPTid\21=101.121.5.234;CREDIT SIM2 Secondary Trx Host IP #CPT21
+0=TERMINAL\CPT\inPriTxnPort_2\CPTid\21=1000;CREDIT SIM2 Primary txn port number #CPT21
+0=TERMINAL\CPT\inSecTxnPort_2\CPTid\21=1000;CREDIT SIM2 Secondary txn port number #CPT21
+0=TERMINAL\HDT\szTPDU\HDTid\6=6002210000;IPP Host TPDU #HDT06
+0=TERMINAL\HDT\szNII\HDTid\6=0221;IPP host NII #HDT06
+0=TERMINAL\HDT\fHostEnable\HDTid\6=1;IPP Host Enable(1)/Disable(0) #HDT06
+0=TERMINAL\HDT\inCurrencyIdx\HDTid\7=2;Currency MMK(1)/USD(2) #HDT07
+0=TERMINAL\HDT\szTPDU\HDTid\7=6000220000;UPI (Finexus) Host TPDU #HDT07
+0=TERMINAL\HDT\szNII\HDTid\7=0220;UPI (Finexus) host NII #HDT07
+0=TERMINAL\HDT\fHostEnable\HDTid\7=1;UPI (Finexus) Host Enable(1)/Disable(0) #HDT07
+0=TERMINAL\HDT\szTPDU\HDTid\13=6002220000;CB Pay Host TPDU #HDT13
+0=TERMINAL\HDT\szNII\HDTid\13=0220;CB Pay host NII #HDT13
+0=TERMINAL\HDT\fHostEnable\HDTid\13=1;CB Pay Host Enable(1)/Disable(0) #HDT13
+0=TERMINAL\HDT\szTPDU\HDTid\17=6000220000;MPU Host TPDU #HDT17
+0=TERMINAL\HDT\szNII\HDTid\17=0220;MPU host NII #HDT17
+0=TERMINAL\HDT\fHostEnable\HDTid\17=1;MPU Host Enable(1)/Disable(0) #HDT17
+0=TERMINAL\HDT\szTPDU\HDTid\18=6000220000;JCB Host TPDU #HDT18
+0=TERMINAL\HDT\szNII\HDTid\18=0220;JCB host NII #HDT18
+0=TERMINAL\HDT\fHostEnable\HDTid\18=1;JCB Host Enable(1)/Disable(0) #HDT18
+0=TERMINAL\HDT\szTPDU\HDTid\19=6000220000;CUP Host TPDU #HDT19
+0=TERMINAL\HDT\szNII\HDTid\19=0220;CUP host NII #HDT19
+0=TERMINAL\HDT\fHostEnable\HDTid\19=1;UPI(MPU) Host Enable(1)/Disable(0) #HDT19
+0=TERMINAL\HDT\inCurrencyIdx\HDTid\20=2;Currency MMK(1)/USD(2) #HDT20
+0=TERMINAL\HDT\szTPDU\HDTid\20=6000220000;Topup/Repayment Host TPDU #HDT20
+0=TERMINAL\HDT\szNII\HDTid\20=0220;Topup/Repayment host NII #HDT20
+0=TERMINAL\HDT\fHostEnable\HDTid\20=0;Topup/Repayment Host Enable(1)/Disable(0) #HDT20
+0=TERMINAL\HDT\inCurrencyIdx\HDTid\21=2;Currency MMK(1)/USD(2) #HDT21
+0=TERMINAL\HDT\szTPDU\HDTid\21=6000220000;CREDIT Host TPDU #HDT21
+0=TERMINAL\HDT\szNII\HDTid\21=0220;CREDIT host NII #HDT21
+0=TERMINAL\HDT\fHostEnable\HDTid\21=1;CREDIT Host Enable(1)/Disable(0) #HDT21
+0=TERMINAL\IPS\inInstallmentPlan\IPSid\1=3;Installment Plan Month 1
+0=TERMINAL\IPS\inInstallmentPlan\IPSid\2=6;Installment Plan Month 2
+0=TERMINAL\IPS\inInstallmentPlan\IPSid\3=12;Installment Plan Month 3
+0=TERMINAL\IPS\inInstallmentPlan\IPSid\4=0;Installment Plan Month 4
+0=TERMINAL\IPS\inInstallmentPlan\IPSid\5=0;Installment Plan Month 5
+0=TERMINAL\IPS\szSchemeID\IPSid\1=IPPSC4;Scheme ID Month 1
+0=TERMINAL\IPS\szSchemeID\IPSid\2=IPPSC9;Scheme ID Month 2
+0=TERMINAL\IPS\szSchemeID\IPSid\3=IPPSC0;Scheme ID Month 3
+0=TERMINAL\IPS\szSchemeID\IPSid\4=;Scheme ID Month 4
+0=TERMINAL\IPS\szSchemeID\IPSid\5=;Scheme ID Month 5
+0=EMV\EMV\lnEMVFloorLimit\EMVid\1=0;VISA Floorlimit
+0=EMV\EMV\szEMVTACDefault\EMVid\1=DC4000A800;VISA TAC Default
+0=EMV\EMV\szEMVTACDenial\EMVid\1=0010000000;VISA TAC Denial
+0=EMV\EMV\szEMVTACOnline\EMVid\1=DC4004F800;VISA TAC Online
+0=EMV\EMV\szEMVTermCapabilities\EMVid\1=E0B0C8;VISA Terminal Capabilities
+0=EMV\EMV\lnEMVFloorLimit\EMVid\2=0;MASTER Floorlimit
+0=EMV\EMV\szEMVTACDefault\EMVid\2=FC50A8A000;MASTER TAC Default
+0=EMV\EMV\szEMVTACDenial\EMVid\2=0010000000;MASTER TAC Denial
+0=EMV\EMV\szEMVTACOnline\EMVid\2=FC50A8F800;MASTER TAC Online
+0=EMV\EMV\szEMVTermCapabilities\EMVid\2=E0B0C8;MASTER Terminal Capabilities
+0=EMV\EMV\lnEMVFloorLimit\EMVid\3=0;AMEX Floorlimit
+0=EMV\EMV\szEMVTACDefault\EMVid\3=CC00000000;AMEX TAC Default
+0=EMV\EMV\szEMVTACDenial\EMVid\3=0000000000;AMEX TAC Denial
+0=EMV\EMV\szEMVTACOnline\EMVid\3=CC00008000;AMEX TAC Online
+0=EMV\EMV\szEMVTermCapabilities\EMVid\3=E0B0C8;AMEX Terminal Capabilities
+0=EMV\EMV\lnEMVFloorLimit\EMVid\4=0;DINERS Floorlimit
+0=EMV\EMV\szEMVTACDefault\EMVid\4=DC00002000;DINERS TAC Default
+0=EMV\EMV\szEMVTACDenial\EMVid\4=0010000000;DINERS TAC Denial
+0=EMV\EMV\szEMVTACOnline\EMVid\4=FCE09CF800;DINERS TAC Online
+0=EMV\EMV\szEMVTermCapabilities\EMVid\4=E0B0C8;DINERS Terminal Capabilities
+0=EMV\EMV\lnEMVFloorLimit\EMVid\5=000000001000;JCB Floorlimit
+0=EMV\EMV\szEMVTACDefault\EMVid\5=FC6024A800;JCB TAC Default
+0=EMV\EMV\szEMVTACDenial\EMVid\5=0010000000;JCB TAC Denial
+0=EMV\EMV\szEMVTACOnline\EMVid\5=FC60ACF800;JCB TAC Online
+0=EMV\EMV\szEMVTermCapabilities\EMVid\5=E0B0C8;JCB Terminal Capabilities
+0=EMV\EMV\lnEMVFloorLimit\EMVid\6=0;UninonPay Floorlimit
+0=EMV\EMV\szEMVTACDefault\EMVid\6=D84000A800;UninonPay TAC Default
+0=EMV\EMV\szEMVTACDenial\EMVid\6=0010000000;UninonPay TAC Denial
+0=EMV\EMV\szEMVTACOnline\EMVid\6=D84004F800;UninonPay TAC Online
+0=EMV\EMV\szEMVTermCapabilities\EMVid\6=E0F0C8;UninonPay Terminal Capabilities
+0=EMV\AID\fAIDEnable\AIDid\7=1;JCB AID Disable(0)/Enable(1)
+0=ENV\CFG\szValue\szTag\AUTOSWITCHSIM=0;Auto Switch Sim Disable(0)/Enable(1)
+0=ENV\CFG\szValue\szTag\MANUALSWITCHSIM=0;Manual Switch Sim Disable(0)/Enable(1)
+1=ENV\CFG\szValue\szTag\#SKIPCVV=1; Allow Bypass CVV input
+1=ENV\CFG\szValue\szTag\#TMKREF=00000359; CUP FinexusTMK Refer Number
+1=ENV\CFG\szValue\szTag\#IPPTMKREF=00000001; IPP TMK Refer Number
+1=ENV\CFG\szValue\szTag\#CUPHIDX=7; CUP Mode 7(Finex), 19(MPU UPI)
+0=ENV\CFG\szValue\szTag\#ALWMPU=1; Allow MPU Credit Card in idle
+0=ENV\CFG\szValue\szTag\#ERRRCPT=1; MPU Error receipt enable flag Enable(1)/Disable(0)
+0=ENV\CFG\szValue\szTag\PREDELTGAP=30; Del PreAuth Record Date Gap
+0=ENV\CFG\szValue\szTag\#APPSUPSTR=11110000;#APPSUPSTR
+0=ENV\CFG\szValue\szTag\#ALLINONE=1;#ALLINONE
+0=ENV\CFG\szValue\szTag\LAST_DATE=000000; LAST_DATE(DDMMYY)
+0=ENV\CFG\szValue\szTag\TIMESET=115900; TIMESET(HHMMSS)
+0=ERMTCT\ERMTct\fERMFlag\ERMTctid\1=1;ERM Enable(1)/Disable(0)
+0=ERMTCT\ERMTct\fUploadFlag\ERMTctid\1=0;SSL Enable(1)/Disable(0)
+0=ERMTCT\ERMTct\inCommMode\ERMTctid\1=4;ERM 0 is dial, 1 is LAN, 2 is GPRS
+0=ERMTCT\ERMTct\inIPHeader\ERMTctid\1=0;ERM 1 is HEX exclude header len, 2 is BCD exclude header len, 3 is HEX include header len, 4 is BCD include header len
+0=ERMTCT\ERMTct\szBankCode\ERMTctid\1=BANK01;ERM BNAK CODE
+0=ERMTCT\ERMTct\szMerchantCode\ERMTctid\1=Merchant02;ERM MERCHANT CODE
+0=ERMTCT\ERMTct\szStoreCode\ERMTctid\1=Store02;ERM STORE CODE
+0=ERMTCT\ERMTct\szTPDU\ERMTctid\1=6001230124;ERM TPDU
+0=ERMTCT\ERMTct\szTerminalSerialNO\ERMTctid\1=EX810-212610102; Terminal Serial Number
+0=ERMTCT\ERMTct\szHostIP\ERMTctid\1=103.240.178.71;ERM Trx Host IP
+0=ERMTCT\ERMTct\ulHostPort\ERMTctid\1=80;ERM txn port number
+0=ERMTCT\ERMTct\szSecHostIP\ERMTctid\1=103.240.178.71;ERM SEC HOST IP
+0=ERMTCT\ERMTct\ulSecHostPort\ERMTctid\1=80;ERM SEC HOST IP
+0=ERMTCT\ERMTct\szPriPhoneNo\ERMTctid\1=0196624704045;ERM PRI PHONE NUM
+0=ERMTCT\ERMTct\szSecPhoneNo\ERMTctid\1=0196624704045;ERM SEC PHONE NUM
+0=ERMTCT\SSL\szDummy1\SSLid\1=/msghandler/TermMsgHandler.ashx; Terminal Message Handler
+0=TERMINAL\PAS\inEnable=0;Auto Settle Enable(1)/Disable(0)
+0=TERMINAL\PAS\szSTLTime1=150000;Auto Settle Time HHMMSS
+0=WAVE\MASTERCARD\szValue\MASTERCARDid\13=999999999999; DF8125 MC PP Contactless Transaction Limit (OnReader CVM)(12 bytes)
+0=WAVE\MASTERCARD\szValue\MASTERCARDid\14=999999999999; DF8124 MC PP Contactless Transaction Limit (OnReader NO CVM)(12 bytes)
+0=WAVE\MASTERCARD\szValue\MASTERCARDid\15=000000000000; DF8126 MC PP CVM Required Limit(12 bytes)
+0=WAVE\MASTERCARD\szValue\MASTERCARDid\16=000000000000; DF8123 MC PP Reader Contactless Floor Limit(12 bytes)
+0=WAVE\VISA\szValue\VISAid\5=999999999999; DF00 VISA Reader CL Trans limit (Default)(12 bytes)
+0=WAVE\VISA\szValue\VISAid\6=000000000000; DF01 VISA Reader CL CVM   limit (Default)(12 bytes)
+0=WAVE\VISA\szValue\VISAid\7=000000000000; DF02 VISA Reader CL Floor limit (Default)(12 bytes)
+0=WAVE\JCB\szValue\JCBid\1=0104;JSpeedy Country Code
+0=WAVE\JCB\szValue\JCBid\2=0104;JSpeedy Currency Code
+0=WAVE\JCB\szValue\JCBid\3=E068C8;JSpeedy Terminal Capability
+0=WAVE\JCB\szValue\JCBid\4=A7004000;JSpeedy TTQ
+0=WAVE\JCB\szValue\JCBid\5=720000;JSpeedy Dynamic Terminal Interchange Profile
+0=WAVE\JCB\szValue\JCBid\7=999999999999;JSpeedy Transaction Limit(12 bytes)
+0=WAVE\JCB\szValue\JCBid\8=000000700000;JSpeedy CVM Required Limit(12 bytes)
+0=WAVE\JCB\szValue\JCBid\9=000000000000;JSpeedy Floor Limit(12 bytes)
+0=WAVE\JCB\szValue\JCBid\12=0010000000;JSpeedy TAC Denial
+0=WAVE\JCB\szValue\JCBid\13=FC60ACF800;JSpeedy TAC Online
+0=WAVE\JCB\szValue\JCBid\14=FC6024A800;JSpeedy TAC Default
+0=WAVE\CUP\szValue\CUPid\5=999999999999;UPI Reader CL Trans limit(12 bytes)
+0=WAVE\CUP\szValue\CUPid\6=000000700000;UPI Reader CL CVM   limit (Default)(12 bytes)
+0=WAVE\CUP\szValue\CUPid\7=000000000000;UPI Reader CL Floor limit (Default)(12 bytes)
+0=WAVE\AID\fAIDEnable\AIDid\1=1;VISA Contactless Enable(1)/Disable(0)
+0=WAVE\AID\fAIDEnable\AIDid\2=1;VISA Contactless Enable(1)/Disable(0)
+0=WAVE\AID\fAIDEnable\AIDid\3=1;MASTER Contactless Enable(1)/Disable(0)
+0=WAVE\AID\fAIDEnable\AIDid\4=1;MASTER Contactless Enable(1)/Disable(0)
+0=WAVE\AID\fAIDEnable\AIDid\5=0;AMEX Contactless Enable(1)/Disable(0)
+0=WAVE\AID\fAIDEnable\AIDid\6=0;DINERS Contactless Enable(1)/Disable(0)
+0=WAVE\AID\fAIDEnable\AIDid\7=1;JCB Contactless Enable(1)/Disable(0)
+0=WAVE\AID\fAIDEnable\AIDid\8=1;UPI Contactless Enable(1)/Disable(0)
+0=WAVE\AID\fAIDEnable\AIDid\9=1;UPI Contactless Enable(1)/Disable(0)
+0=WAVE\AID\fAIDEnable\AIDid\10=1;UPI Contactless Enable(1)/Disable(0)
+0=WAVE\AID\fAIDEnable\AIDid\11=0;MCCS Contactless Enable(1)/Disable(0)
+0=TERMINAL\TCT\fSendTCBeforeSettle=0;Send TC BeforeSettle Enable(1)/Disable(0)
+0=ENV\CFG\szValue\szTag\CANCELERMUPLOAD=0;Cancel ERM Upload Receipt Disable(0)/Enable(1)
+0=ENV\CFG\szValue\szTag\PARKFEE=0;Tap on Idle Disable(0)/Enable(1)
+0=ENV\CFG\szValue\szTag\PARKFEEAMT=500;Tap on Idle Amount
+0=ENV\CFG\szValue\szTag\CTLSTO=30;Contactless Read Time
+0=ENV\CFG\szValue\szTag\TOPUPRELOAD=0;Topup/Repayment Disable(0)/Enable(1)
+0=ENV\CFG\szValue\szTag\SSLV23=4;TLS 1.2 Disable(0)/Enable(1) 
+0=ENV\CFG\szValue\szTag\SSL_CLI_AUTH=0;Certificate Disable(0)/Enable(1)
+0=ENV\CFG\szValue\szTag\QRPAY=1;CB Pay Disable(0)/Enable(1)
+0=ENV\CFG\szValue\szTag\CHECKBATT=0;CHECK DRAIN BATTERY Disable(0)/Enable(1) 
+0=ENV\CFG\szValue\szTag\CASHADVANCE=1;CASH ADVANCE Menu Disable(0)/Enable(1) 
+0=ENV\CFG\szValue\szTag\REFUNDMENU=0;REFUND Menu Disable(0)/Enable(1)
+0=ENV\CFG\szValue\szTag\JCBSIGNLINE=0;JCB FOOTER SIGNATURE LINE Disable(0)/Enable(1) 
+0=ENV\CFG\szValue\szTag\UPISIGNLINE=0;UPI FOOTER SIGNATURE LINE Disable(0)/Enable(1)
+0=ENV\CFG\szValue\szTag\CVMAMT=0;UPI CVM FOOTER SIGNATURE LINE Minimum/ Maximum amount
+0=TERMINAL\QPT\GenerateURL=https://122.248.120.187:4443/payment-api/v1/qr/generate-transaction.service;CB Pay Generate URL
+0=TERMINAL\QPT\TranStatusURL=https://122.248.120.187:4443/payment-api/v1/qr/check-transaction.service;CB Pay TranStatus URL
+0=TERMINAL\QPT\VoidURL=https://122.248.120.187:4443/payment-api/v1/qr/refund-transaction.service;CB Pay Void URL
+0=TERMINAL\QPT\CancelURL=https://122.248.120.187:4443/payment-api/v1/qr/cancel-transaction.service;CB Pay Cancel URL
+1=TERMINAL\QPT\AuthenToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjY5ODIyNjQsIm1lcklkIjoiTTYwMTEwMDAwMDAwMDAxNiJ9.hWDqDWfxtK1tE8Iz-a-R7RiN2hYJZzkQMtn66rpf_NY;CB Pay Authentication Token
+1=TERMINAL\QPT\SubMerId=0000000001600001;CB Pay Submerchant ID Token
+0=TERMINAL\QPT\inQP_CurlTimeout=6;CB Pay Curl Timeout
+0=TERMINAL\QPT\inQP_CurlRetries=3;CB Pay Curl Retries
