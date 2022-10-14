@@ -4970,8 +4970,9 @@ USHORT ushCTOS_PrintFooter(int page)
 						if(fAmountLessThanFloorLimit() == d_OK)
 						{
 							vdDebug_LogPrintf("ushCTOS_PrintFooter:inJCBSignLine NO SIGNATURE REQUIRED"); 
-						
-							inCCTOS_PrinterBufferOutput(ONE_LINE_DOT,&stgFONT_ATTRIB,1);
+
+							//http://118.201.48.214:8080/issues/75.76 #5) To remove extra spaces between "AMOUNT" and "No Signature Required" text for MPU-JCB and JCB
+							//inCCTOS_PrinterBufferOutput(ONE_LINE_DOT,&stgFONT_ATTRIB,1); for testing
 							inCCTOS_PrinterBufferOutput("*****NO SIGNATURE REQUIRED*****",&stgFONT_ATTRIB,1);						
 							
 							byPassSignLine = 1;					
@@ -5311,8 +5312,9 @@ USHORT ushCTOS_PrintFooter(int page)
 					if(fAmountLessThanFloorLimit() == d_OK)
 					{
 						vdDebug_LogPrintf("ushCTOS_PrintFooter:inJCBSignLine NO SIGNATURE REQUIRED"); 
-					
-						inCCTOS_PrinterBufferOutput(ONE_LINE_DOT,&stgFONT_ATTRIB,1);
+
+					//http://118.201.48.214:8080/issues/75.76 #5) To remove extra spaces between "AMOUNT" and "No Signature Required" text for MPU-JCB and JCB
+						//inCCTOS_PrinterBufferOutput(ONE_LINE_DOT,&stgFONT_ATTRIB,1); - for testing
 						inCCTOS_PrinterBufferOutput("*****NO SIGNATURE REQUIRED*****",&stgFONT_ATTRIB,1);						
 						
 						byPassSignLine = 1; 						

@@ -1545,39 +1545,41 @@ int inCTOS_CustComputeAndDispTotal(void) {
 
         //for VISA USD currency
         if (strTCT.fVEPS == 1 && atol(strTCT.szVEPSUSDLimit) >= atol(szTotalAmt)
-                && ('4' == srTransRec.szPAN[0]) && (srTransRec.byTransType == SALE || srTransRec.byTransType == REFUND)) {
+                && ('4' == srTransRec.szPAN[0]) && (srTransRec.byTransType == SALE || srTransRec.byTransType == REFUND)) 
+        {
+        			//http://118.201.48.214:8080/issues/75.76 #1) Visa/Master via manual entry and fallback presents sign line for any amount when fVEPS=1, fQPS=1.
+			            if (srTransRec.byEntryMode == CARD_ENTRY_FALLBACK ||
+			                    srTransRec.byEntryMode == CARD_ENTRY_MANUAL) {
+			                vdDebug_LogPrintf("VEPS MMK not support for manual, fallback");
+			            } else {
 
-            if (srTransRec.byEntryMode == CARD_ENTRY_FALLBACK ||
-                    srTransRec.byEntryMode == CARD_ENTRY_MANUAL) {
-                vdDebug_LogPrintf("VEPS MMK not support for manual, fallback");
-            } else {
+			                strcpy(srTransRec.stIPPinfo.szInstallmentTerms, "VPU");
 
-                strcpy(srTransRec.stIPPinfo.szInstallmentTerms, "VPU");
-
-                vdDebug_LogPrintf(" inCTOS_CustComputeAndDispTotal szInstallmentTerms=[%s]", srTransRec.stIPPinfo.szInstallmentTerms);
-               
-                // Return with NO SIGNATURE REQUIRED
-                return d_OK;
-            }
+			                vdDebug_LogPrintf(" inCTOS_CustComputeAndDispTotal szInstallmentTerms=[%s]", srTransRec.stIPPinfo.szInstallmentTerms);
+			               
+			                // Return with NO SIGNATURE REQUIRED
+			                return d_OK;
+	           			 }
         }
 
         //for Master USD currency
 
         if (strTCT.fQPS == 1 && atol(strTCT.szQPSUSDLimit) >= atol(szTotalAmt)
-                && ('5' == srTransRec.szPAN[0]) && (srTransRec.byTransType == SALE || srTransRec.byTransType == REFUND)) {
+                && ('5' == srTransRec.szPAN[0]) && (srTransRec.byTransType == SALE || srTransRec.byTransType == REFUND)) 
+        {
+			//http://118.201.48.214:8080/issues/75.76 #1) Visa/Master via manual entry and fallback presents sign line for any amount when fVEPS=1, fQPS=1.
+	            if (srTransRec.byEntryMode == CARD_ENTRY_FALLBACK ||
+	                    srTransRec.byEntryMode == CARD_ENTRY_MANUAL) {
+	                vdDebug_LogPrintf("QPS MMK not support for manual, fallback");
+	            } else {
 
-            if (srTransRec.byEntryMode == CARD_ENTRY_FALLBACK ||
-                    srTransRec.byEntryMode == CARD_ENTRY_MANUAL) {
-                vdDebug_LogPrintf("QPS MMK not support for manual, fallback");
-            } else {
+	                strcpy(srTransRec.stIPPinfo.szInstallmentTerms, "QPU");
 
-                strcpy(srTransRec.stIPPinfo.szInstallmentTerms, "QPU");
-
-                vdDebug_LogPrintf(" inCTOS_CustComputeAndDispTotal szInstallmentTerms=[%s]", srTransRec.stIPPinfo.szInstallmentTerms);
-               
-                // Return with NO SIGNATURE REQUIRED
-                return d_OK;
-            }
+	                vdDebug_LogPrintf(" inCTOS_CustComputeAndDispTotal szInstallmentTerms=[%s]", srTransRec.stIPPinfo.szInstallmentTerms);
+	               
+	                // Return with NO SIGNATURE REQUIRED
+	                return d_OK;
+	            }
         }
 
 
@@ -1595,39 +1597,43 @@ int inCTOS_CustComputeAndDispTotal(void) {
 
         //for VISA MMK currency
         if (strTCT.fVEPS == 1 && atol(strTCT.szVEPSLimit) >= atol(szTotalAmt)
-                && ('4' == srTransRec.szPAN[0]) && (srTransRec.byTransType == SALE || srTransRec.byTransType == REFUND)) {
+                && ('4' == srTransRec.szPAN[0]) && (srTransRec.byTransType == SALE || srTransRec.byTransType == REFUND))
+        {
 
-            if (srTransRec.byEntryMode == CARD_ENTRY_FALLBACK ||
-                    srTransRec.byEntryMode == CARD_ENTRY_MANUAL) {
-                vdDebug_LogPrintf("VEPS MMK not support for manual, fallback");
-            } else {
+			 //http://118.201.48.214:8080/issues/75.76 #1) Visa/Master via manual entry and fallback presents sign line for any amount when fVEPS=1, fQPS=1.
+		            if (srTransRec.byEntryMode == CARD_ENTRY_FALLBACK ||
+		                    srTransRec.byEntryMode == CARD_ENTRY_MANUAL) {
+		                vdDebug_LogPrintf("VEPS MMK not support for manual, fallback");
+		            } else {
 
-                strcpy(srTransRec.stIPPinfo.szInstallmentTerms, "VPM");
+		                strcpy(srTransRec.stIPPinfo.szInstallmentTerms, "VPM");
 
-                vdDebug_LogPrintf(" inCTOS_CustComputeAndDispTotal szInstallmentTerms=[%s]", srTransRec.stIPPinfo.szInstallmentTerms);
+		                vdDebug_LogPrintf(" inCTOS_CustComputeAndDispTotal szInstallmentTerms=[%s]", srTransRec.stIPPinfo.szInstallmentTerms);
 
-                // Return with NO SIGNATURE REQUIRED
-                return d_OK;
-            }
+		                // Return with NO SIGNATURE REQUIRED
+		                return d_OK;
+		            }
+					
         }
 
-        //for Master MMK currency
-        if ( strTCT.fQPS == 1 && atol(strTCT.szQPSLimit) >= atol(szTotalAmt)
-                && ('5' == srTransRec.szPAN[0]) && (srTransRec.byTransType == SALE || srTransRec.byTransType == REFUND)) {
+	        //for Master MMK currency
+	        if ( strTCT.fQPS == 1 && atol(strTCT.szQPSLimit) >= atol(szTotalAmt)
+	                && ('5' == srTransRec.szPAN[0]) && (srTransRec.byTransType == SALE || srTransRec.byTransType == REFUND))
+	        {
+				//http://118.201.48.214:8080/issues/75.76 #1) Visa/Master via manual entry and fallback presents sign line for any amount when fVEPS=1, fQPS=1.	        
+		            if (srTransRec.byEntryMode == CARD_ENTRY_FALLBACK ||
+		                    srTransRec.byEntryMode == CARD_ENTRY_MANUAL) {
+		                vdDebug_LogPrintf("QPS MMK not support for manual, fallback");
+		            } else {
 
-            if (srTransRec.byEntryMode == CARD_ENTRY_FALLBACK ||
-                    srTransRec.byEntryMode == CARD_ENTRY_MANUAL) {
-                vdDebug_LogPrintf("QPS MMK not support for manual, fallback");
-            } else {
+		                strcpy(srTransRec.stIPPinfo.szInstallmentTerms, "QPM");
 
-                strcpy(srTransRec.stIPPinfo.szInstallmentTerms, "QPM");
+		                vdDebug_LogPrintf(" inCTOS_CustComputeAndDispTotal szInstallmentTerms=[%s]", srTransRec.stIPPinfo.szInstallmentTerms);
 
-                vdDebug_LogPrintf(" inCTOS_CustComputeAndDispTotal szInstallmentTerms=[%s]", srTransRec.stIPPinfo.szInstallmentTerms);
-
-                // Return with NO SIGNATURE REQUIRED				
-                return d_OK;
-            }
-        }
+		                // Return with NO SIGNATURE REQUIRED				
+		                return d_OK;
+		            }
+	        }
 
     }
 	#endif

@@ -780,6 +780,9 @@ int inCTOS_ChangePIN(void)
 int inCTOS_ChangePINFlowProcess(void)
 {
     int inRet = d_NO;
+#ifdef CBB_TUP_ROUTING
+		int inTopUpReload = get_env_int("TUPFINFLAG");
+#endif
 
     vdCTOS_SetTransType(CHANGE_PIN);
     
@@ -813,10 +816,25 @@ int inCTOS_ChangePINFlowProcess(void)
     inRet = inCTOS_WaveGetCardFields();
     if(d_OK != inRet)
         return inRet;
-    
+
+#ifdef CBB_TUP_ROUTING
+	if(inTopUpReload == 1)
+	{
+	    inRet = inCTOS_TUPSelectHost();
+	    if (d_OK != inRet)
+	        return inRet;
+	}
+	else
+	{
+	    inRet = inCTOS_SelectHost();
+	    if (d_OK != inRet)
+	        return inRet;
+	}
+#else    
     inRet = inCTOS_SelectHost();
     if(d_OK != inRet)
         return inRet;
+#endif	
 
 	inRet = inCTOS_CheckAndSelectMutipleMID();
 	if(d_OK != inRet)

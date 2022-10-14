@@ -1190,3 +1190,41 @@ host display. Example remove Topup&Repayment in select host.
 10112022
 1. with fix for MMT load error for CAV transaction.
 2. With firx for HOST SELECTION ERR during TOPUP_RELOAD_LOGON.
+
+
+10122022
+1. with fix for incorrect MID format (szMaskMID) during VISA / MC transaction.
+The fix: 
+From:
+	result = sqlite3_bind_text(stmt, inStmtSeq +=1, (char*)strIIT.szMaskMID, strlen((char*)strIIT.szMaskTID), SQLITE_STATIC);
+To:
+	result = sqlite3_bind_text(stmt, inStmtSeq +=1, (char*)strIIT.szMaskMID, strlen((char*)strIIT.szMaskMID), SQLITE_STATIC);
+
+2. With fix for PIN CHANGE host selection error"
+
+
+10132022
+ With fix for the following:
+2) Pure JCB via magstripe and manual entry prompts PIN.
+
+3) To add these 2 OnUs new BINs:
+- 3571 0950 0000 to 3571 0950 9999 (MPU-JCB)
+- 9512 0800 0000 to 9512 0899 9999 (MPU Prepaid )
+
+To modify PAN Hi value for the following BIN:
+   - 9505 0800 0000 to 9505 0899 9999  (MPU Credit, CDTid 43)
+
+   
+4) To fix CPTid 20 host name in db
+
+5) To remove extra spaces between "AMOUNT" and "No Signature Required" text 
+for MPU-JCB and JCB
+
+
+6) To remove UPLOAD RECEIPT (from V3) and SIGN OFF menus (both V3/MPOS)
+
+7) To add J/Speedy prm (floorlimit, CTLS trnx limit, CL CVM required limit) 
+in the prm file
+0=WAVE\JCB\szValue\JCBid\7=000100000000; JCB Reader CL Trans limit (Default)(12 bytes)
+0=WAVE\JCB\szValue\JCBid\8=000000030001; JCB Reader CL CVM   limit (Default)(12 bytes)
+0=WAVE\JCB\szValue\JCBid\9=000000020001; JCB Reader CL Floor limit (Default)(12 bytes)

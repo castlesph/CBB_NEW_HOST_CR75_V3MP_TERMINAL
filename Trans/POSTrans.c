@@ -1570,7 +1570,8 @@ void vdCTOSS_PrintFormatTIDMID(char* pchPAN, char* pchFmtPAN, int inFmtPANSize, 
     /* Remove 1 from count for NULL terminator, assume caller uses sizeof */
     //inFmtPANSize--;
 
-    vdDebug_LogPrintf("vdCTOSS_PrintFormatPAN inFmtPANSize:[%d] strIIT.inIssuerNumber:[%d] byTransType:[%d] page:[%d]", inFmtPANSize, strIIT.inIssuerNumber, srTransRec.byTransType, page);
+    vdDebug_LogPrintf("vdCTOSS_PrintFormatPAN szMaskTID:[%s]szMaskMID:[%d]inFmtPANSize:[%d] strIIT.inIssuerNumber:[%d] byTransType:[%d] page:[%d]",  
+    		strIIT.szMaskTID,strIIT.szMaskMID, inFmtPANSize, strIIT.inIssuerNumber, srTransRec.byTransType, page);
 
 
     memset(szFmt, 0x00, sizeof (szFmt));
@@ -7289,6 +7290,10 @@ int inMPU_UPI_GetOnlinePIN(void) {
 
 //@@IBR ADD 20161025
 
+
+/*
+
+*/
 int inMPU_GetOnlinePIN(void) {
     int inRet = d_NO;
     BYTE EMVtagVal[64];
@@ -7340,7 +7345,8 @@ int inMPU_GetOnlinePIN(void) {
 	//if(srTransRec.HDTid == 21 || srTransRec.HDTid == 1)
 	//Fix for http://118.201.48.214:8080/issues/75 #35.  4)MC/VS card is asking to prompt PIN in this pk. So we would like to get normal production flow.
 	// added srTransRec.IITid == 6 so UPI wont ask for pin.
-	if((srTransRec.HDTid == 6 || srTransRec.HDTid ==  22 || srTransRec.HDTid == 23)  && (srTransRec.IITid == 2 || srTransRec.IITid == 1 || srTransRec.IITid == 6))
+	// added srTransRec.IITid == 4 >> http://118.201.48.214:8080/issues/75.76 #2) Pure JCB via magstripe and manual entry prompts PIN.
+	if((srTransRec.HDTid == 6 || srTransRec.HDTid ==  22 || srTransRec.HDTid == 23)  && (srTransRec.IITid == 2 || srTransRec.IITid == 1 ||  srTransRec.IITid == 4 || srTransRec.IITid == 6))
 	{
 	
 		 vdDebug_LogPrintf("inMPU_GetOnlinePIN ((srTransRec.HDTid == 6 || srTransRec.HDTid ==  22)  && (srTransRec.IITid == 2 || srTransRec.IITid == 1 || srTransRec.IITid == 6))");
