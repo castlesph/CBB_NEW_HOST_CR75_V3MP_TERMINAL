@@ -2156,7 +2156,14 @@ short inCTOS_LoadCDTIndex(void) {
         }
     }
 
-    if (strCDT.fManEntry == FALSE && srTransRec.byEntryMode == CARD_ENTRY_MANUAL) {
+	
+	vdDebug_LogPrintf("inCTOS_LoadCDTIndex AAA[%d][%d][%d]", strCDT.fManEntry, srTransRec.byEntryMode, srTransRec.byTransType);
+
+    //if (strCDT.fManEntry == FALSE && srTransRec.byEntryMode == CARD_ENTRY_MANUAL) {
+    if (strCDT.fManEntry == FALSE && srTransRec.byEntryMode == CARD_ENTRY_MANUAL && srTransRec.byTransType != REFUND) {
+
+		vdDebug_LogPrintf("inCTOS_LoadCDTIndex AAA");
+		
         vduiClearBelow(2);
         setLCDPrint(8, DISPLAY_POSITION_LEFT, "NO MANUAL ENTRY");
         vduiWarningSound();
@@ -2701,7 +2708,10 @@ SWIPE_AGAIN:
                 return USER_ABORT;
             }
 
-            if (strCDT.fManEntry == FALSE && srTransRec.byEntryMode == CARD_ENTRY_MANUAL) {
+			vdDebug_LogPrintf("inCTOS_GetCardFields AAA[%d][%d][%d]", strCDT.fManEntry, srTransRec.byEntryMode, srTransRec.byTransType);
+
+           // if (strCDT.fManEntry == FALSE && srTransRec.byEntryMode == CARD_ENTRY_MANUAL) {
+		   if (strCDT.fManEntry == FALSE && srTransRec.byEntryMode == CARD_ENTRY_MANUAL && srTransRec.byTransType != REFUND) {           
                 vduiClearBelow(2);
                 setLCDPrint(8, DISPLAY_POSITION_LEFT, "NO MANUAL ENTRY");
                 vduiWarningSound();
@@ -3015,8 +3025,11 @@ SWIPE_AGAIN:
                 return USER_ABORT;
             }
 
+
+			vdDebug_LogPrintf("inCTOS_WaveGetCardFields AAA[%d][%d][%d]", strCDT.fManEntry, srTransRec.byEntryMode, srTransRec.byTransType);
+
             //@@IBR ADD 20170202 no manual entry
-            if (strCDT.fManEntry == FALSE) {
+            if (strCDT.fManEntry == FALSE && srTransRec.byTransType != REFUND) {
                 vduiClearBelow(8);
                 setLCDPrint(8, DISPLAY_POSITION_LEFT, "NO MANUAL ENTRY");
                 vduiWarningSound();
@@ -5362,7 +5375,7 @@ EntryOfStartTrans:
             }
                         
             //@@IBR ADD 20170202 no manual entry
-            if(strCDT.fManEntry == FALSE){
+            if(strCDT.fManEntry == FALSE && srTransRec.byTransType != REFUND){
                 vduiClearBelow(8);
                 setLCDPrint(8, DISPLAY_POSITION_LEFT, "NO MANUAL ENTRY");
                 vduiWarningSound();
@@ -5875,7 +5888,7 @@ EntryOfStartTrans:
             }
                         
             //@@IBR ADD 20170202 no manual entry
-            if(strCDT.fManEntry == FALSE){
+            if(strCDT.fManEntry == FALSE && srTransRec.byTransType != REFUND){
                 vduiClearBelow(8);
                 setLCDPrint(8, DISPLAY_POSITION_LEFT, "NO MANUAL ENTRY");
                 vduiWarningSound();
