@@ -5229,22 +5229,41 @@ int inPackIsoFunc55(TRANS_DATA_TABLE *srTransPara, unsigned char* uszSendData) {
 		else
 			inDataCnt = inPackISOEMVData(srTransPara, uszSendData);
 	}
+	
     if (srTransPara->byEntryMode == CARD_ENTRY_WAVE) {
-        if (srTransPara->bWaveSID == d_VW_SID_PAYPASS_MCHIP)
+
+		vdDebug_LogPrintf("**inPackIsoFunc55 BBB**");
+		
+        if (srTransPara->bWaveSID == d_VW_SID_PAYPASS_MCHIP){
+			
+			vdDebug_LogPrintf("**inPackIsoFunc55 CCC**");
             inDataCnt = inPackISOPayPassData(srTransPara, uszSendData);
+        	}
 
         if (srTransPara->bWaveSID == d_VW_SID_VISA_WAVE_2 ||
-                srTransPara->bWaveSID == d_VW_SID_VISA_WAVE_QVSDC)
+                srTransPara->bWaveSID == d_VW_SID_VISA_WAVE_QVSDC){
+                
+				vdDebug_LogPrintf("**inPackIsoFunc55 DDD**");
             inDataCnt = inPackISOPayWaveData(srTransPara, uszSendData);
+        }
 
-        if (srTransPara->bWaveSID == d_VW_SID_JCB_WAVE_QVSDC)
+        if (srTransPara->bWaveSID == d_VW_SID_JCB_WAVE_QVSDC){
+			
+			vdDebug_LogPrintf("**inPackIsoFunc55 EEE**");
             inDataCnt = inPackISOPayWaveData(srTransPara, uszSendData);
+        	}
 
-        if (srTransPara->bWaveSID == d_VW_SID_AE_EMV)
+        if (srTransPara->bWaveSID == d_VW_SID_AE_EMV){
+			
+			vdDebug_LogPrintf("**inPackIsoFunc55 FFF**");
             inDataCnt = inPackISOExpressPayData(srTransPara, uszSendData);
+        	}
 		
-		if (srTransPara->bWaveSID == d_VW_SID_CUP_EMV)
+		if (srTransPara->bWaveSID == d_VW_SID_CUP_EMV){
+			
+			vdDebug_LogPrintf("**inPackIsoFunc55 GGG**");
 			inDataCnt = inPackISOQuickpassData(srTransPara, uszSendData);
+			}
 
 		// Add to send de55 for JCB CTLS transactions #1
 		#ifdef MPU_CARD_TC_UPLOAD_ENABLE
@@ -7705,13 +7724,13 @@ int inPackISOJCBPayWaveData(TRANS_DATA_TABLE *srTransPara, unsigned char *uszUnP
         szPacket[inPacketCnt++] = 0x53;
         szPacket[inPacketCnt++] = 1;
         szPacket[inPacketCnt++] = 0x52;
-
+#if 0
         szPacket[inPacketCnt ++] = 0x9F;
         szPacket[inPacketCnt ++] = 0x6E;
         szPacket[inPacketCnt ++] = 4;	
         memcpy(&szPacket[inPacketCnt], "\x20\x70\x00\x00", 4);// get chip transaction counter
         inPacketCnt += 4;		 
-
+#endif
 		/*Card Product Identification Information*/
         szPacket[inPacketCnt++] = 0x9F;
         szPacket[inPacketCnt++] = 0x63;
@@ -7780,7 +7799,7 @@ int inPackISOPayWaveData(TRANS_DATA_TABLE *srTransPara, unsigned char *uszUnPack
 
     DebugAddSTR("load f55", "emv", 2);
 
-    vdMyEZLib_LogPrintf("**inPackISOPayWaveData START**");
+    vdDebug_LogPrintf("**inPackISOPayWaveData START");
     memset(szPacket, 0, sizeof (szPacket));
     inDataCnt = 0;
 
@@ -7874,6 +7893,16 @@ int inPackISOPayWaveData(TRANS_DATA_TABLE *srTransPara, unsigned char *uszUnPack
         memcpy(&szPacket[inPacketCnt], srTransPara->stEMVinfo.T9F33, 3);
         inPacketCnt += 3;
 
+#if 1 //http://118.201.48.214:8080/issues/574#change-5127
+		//Cardholder Verification Method (CVM) Results
+		// to address redmine case #2257
+		szPacket[inPacketCnt++] = 0x9F;
+		szPacket[inPacketCnt++] = 0x34;
+		szPacket[inPacketCnt++] = 3;
+		memcpy(&szPacket[inPacketCnt], srTransPara->stEMVinfo.T9F34, 3);
+		inPacketCnt += 3;
+#endif
+
         szPacket[inPacketCnt++] = 0x9F;
         szPacket[inPacketCnt++] = 0x35;
         szPacket[inPacketCnt++] = 1;
@@ -7902,13 +7931,17 @@ int inPackISOPayWaveData(TRANS_DATA_TABLE *srTransPara, unsigned char *uszUnPack
         szPacket[inPacketCnt++] = 1;
         szPacket[inPacketCnt++] = 0x52;
 
+		
+//http://118.201.48.214:8080/issues/574#change-5127
+#if 0
         szPacket[inPacketCnt ++] = 0x9F;
         szPacket[inPacketCnt ++] = 0x6E;
         szPacket[inPacketCnt ++] = 4;	
         memcpy(&szPacket[inPacketCnt], "\x20\x70\x00\x00", 4);// get chip transaction counter
         inPacketCnt += 4;		 
+#endif
 
-		/*Card Product Identification Information*/
+	/*Card Product Identification Information*/
         szPacket[inPacketCnt++] = 0x9F;
         szPacket[inPacketCnt++] = 0x63;
         szPacket[inPacketCnt++] = 16;

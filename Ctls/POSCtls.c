@@ -662,6 +662,7 @@ void vdCTOSS_WaveGetEMVData(BYTE *baChipData, USHORT usChipDataLen)
     BYTE        byVal[64];
     unsigned char szTransSeqCounter[6+1];
 	unsigned char szHEXTransSeqCounter[3+1];
+    BYTE   EMVtag9F6EVal[8+1];
 
     memset(byVal, 0x00, sizeof(byVal));
     usCTOSS_FindTagFromDataPackage(TAG_5F34_PAN_IDENTFY_NO, byVal, &usLen, baChipData, usChipDataLen);
@@ -698,7 +699,10 @@ void vdCTOSS_WaveGetEMVData(BYTE *baChipData, USHORT usChipDataLen)
 #ifdef JCB_LEGACY_FEATURE
 	usCTOSS_FindTagFromDataPackage(TAG_9F6E, srTransRec.stEMVinfo.T9F6E, &usLen,  baChipData, usChipDataLen);
 	srTransRec.stEMVinfo.T9F6E_len = usLen;
-	vdDebug_LogPrintf("T9F6E =[%d]-----",srTransRec.stEMVinfo.T9F6E);
+	//vdDebug_LogPrintf("T9F6E =[%d]-----",srTransRec.stEMVinfo.T9F6E);
+
+	memcpy(EMVtag9F6EVal, srTransRec.stEMVinfo.T9F6E, srTransRec.stEMVinfo.T9F6E_len);
+	vdDebug_LogPrintf("EMVtag9F6EVal EMVtagVal=[%x][%x][%x][%x]", EMVtag9F6EVal[0], EMVtag9F6EVal[1], EMVtag9F6EVal[2], EMVtag9F6EVal[3]);
 
 	usCTOSS_FindTagFromDataPackage(TAG_9F7C, srTransRec.stEMVinfo.T9F7C, &usLen,  baChipData, usChipDataLen);
 	srTransRec.stEMVinfo.T9F7C_len = usLen;
